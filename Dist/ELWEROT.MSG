@@ -1,0 +1,3681 @@
+
+LEVEL3 {Elwynor Technologies: Erotica}
+
+ You may want to limit access to Erotica to certain
+ users.  If this is the case, fill this option in
+ with the name of a key.  Only users holding the key
+ named in this option will be allowed to enter the
+ game.  If you wish everyone to be able to access
+ the game, leave this option blank.
+
+ERTKEY {ADULT} S 15 Key required to play Erotica
+
+
+LEVEL4 {Elwynor Technologies: Erotica}
+
+ This option allows you to either turn on or off
+ the logon tag message for Erotica. If you wish to
+ have the tag message displayed at logon make your
+ selection a YES, else answer NO. Remember, only
+ users with the ADULT key will be able to see this
+ message.
+
+ERTTAG {Toggle Erotica logon message on? YES} B
+
+ This option allows you to either speed up or slow
+ down the rate at which the game will create items
+ randomly though the game. The higher this number is
+ the fewer items the game will create, the lower it
+ is, the faster it will create items.
+
+ITEMSPD {Item production Rate: 40} N 1 150
+
+
+LEVEL6 {Elwynor Technologies: Erotica}
+
+
+NORMM {***
+[0;1;36m%s[0;1;37m is a [0;1;36m%s [0;1;37mmale.[0m
+} T Male Description
+
+
+NORMF {***
+[0;1;36m%s [0;1;37mis a [0;1;36m%s [0;1;37mfemale.[0m
+} T Female Description
+
+
+INTRO1 {
+[0;1;37mIntroduction to Erotica:
+
+Welcome to the world of Erotica. The first adult fantasy adventure game for
+The Major BBS. The object of the game is simple, to have sexual encounters
+with as many people as possible. The more sexual encounters you have, the
+higher your score will be. And for the sake of your ego, you are going to
+want to be on the top 10 listing!
+
+This game is unlike most other games in the respect then even when you
+quit playing the game, your character will still remain in the game to be
+used/abused by other players. So it is in your best interests to play this
+game twenty-four hours a day, seven days a week, three hundred sixty-five
+days a year.
+
+But if you can't, rest assured that once someone else has sucessfully
+seduced you, you will be "recovering from a prior encounter" the next time
+a player tries to seduce you, or until you re-enter the game or the next
+day, which ever comes first.
+
+[0;1;33m<< Hit [ENTER] >[0m} T Erotica first intro screen
+
+
+INTRO2 {
+[0;1;37mPlayer Encounters:
+
+To have a sexual encounter with another person you must attempt to "arouse"
+the other player. For example, if you were attempting to arouse a player by
+the name of Alyssa, you would type "arouse Alyssa" (without the quotes).
+
+If you are sexually compatible with the other player, the encounter will be
+allowed to continue, else you'll get rejected. Once the encounter is started
+you will get a menu listing the "toys" that you currently have in your
+posession. You will have to use your items on the other player to reduce
+their defenses.
+
+Once the other player submits to you, you will then be given a few different
+choices on the type of sexual encounter you want to have with the other
+player.
+
+[0;1;33m<< Hit [ENTER] >[0m} T Erotica second intro screen
+
+
+INTRO3 {
+[0;1;37mGeneral Game Play:
+
+Erotica works very similar to other text adventure games. To move around you
+will need to type in the direction you want to move. For example, if you want
+to go north you can type: N, North, or Go North.
+
+You are also allowed to interact with other players in the game. If you wish
+to say something, all you need to do is type:
+
+    say Hi People, hows it going?
+
+And everyone else in the same room would see your message.
+
+You can also do actions to other players, such as:
+
+   hug  [player name]   <--- Cause you to hug the other player
+   kiss [player name]   <--- Cause you to kiss the other player
+
+The list of actions include kick, hum, answer, cry, and many more. You can
+type "help list" in the game to get an expanded list of these actions.
+
+[0;1;33m<< Hit [ENTER] to Continue >[0m} T Quest third intro screen
+
+
+GOWAY {
+[0;1;37mSorry, but you can not play this game unless you are [0;1;33m"live".[0m
+} T Not "live" message
+
+
+HELP {
+[0;1;37mYour computer will relay you the information about the world of Erotica.
+It will tell you what is happening around you, what you can see around you,
+and allow you to give commands which will control your character. For
+example, to see what the player "Larry" looks like, type "look Larry". To
+get Larry's condom, type "grab Larrys's condom". To move west, type
+"go west", "west", or simply "w". To get more detailed help on any of the
+following type:
+
+  [0;1;33mHelp Arouse.... [0;1;37mHow to Arouse Another Player
+  [0;1;33mHelp Bank...... [0;1;37mHow to use the Bank
+  [0;1;33mHelp Casino.... [0;1;37mUsing the Casino
+  [0;1;33mHelp Commands.. [0;1;37mGame Command usage
+  [0;1;33mHelp Diseases.. [0;1;37mInformation on Diseases/Safe Sex
+  [0;1;33mHelp Info...... [0;1;37mInformation on Erotica
+  [0;1;33mHelp Library... [0;1;37mUsing of the Library
+  [0;1;33mHelp List ..... [0;1;37mBrief list of Commands
+  [0;1;33mHelp Player.... [0;1;37mAbout your Character
+  [0;1;33mHelp Shops..... [0;1;37mInformation on using Shops
+
+And if you get lost, type "map" anywhere to take a look at a map of the
+city![0m
+
+} T Erotica main help text
+
+
+CMDHLP {
+[0;1;37mCommand Help:
+
+ The Command Parser accepts  input in
+ the form :[0;1;33m VERB + NOUN
+	    VERB + PHRASE
+	    COMMAND
+
+[0;1;37mExamples: [0;1;33mGet <Item Name>
+	  Say <phrase>
+	  Give <Item Name> to <player>
+	  Laugh
+	  Hug <player>
+
+[0;1;37mOne of the most important commands is the verb "say", which you can use to
+talk to other players who are nearby. For example, if Larry is in the
+room with you, and you type "say Hi Larry, did you manage to get happy with
+Alyssa?", Larry will receive a message like this:
+
+>***
+YOUR NAME says: [0;1;33mHi Larry, did you manage to get happy with Alyssa?[0m
+
+} T Erotica "help commands" output
+
+
+INFHLP {
+[0;1;37mGame Information:
+
+[0;1;31mErotica is an interactive fantasy role playing game written for The
+Major BBS by Mike Polzin, and designed by Theresa Thorsen. It was updated to
+the latest BBS versions by Rick Hadsall.
+
+
+Many hours of testing and work went into the creation of this game, so
+enjoy![0m
+
+} T Erotica "help info" output
+
+
+PLYHLP {
+[0;1;33mPlayer Help:
+
+[0;1;37mIn Erotica, players have two basic statistics which affect game play.
+
+Sexual Preference: You sexual prefence is what either restricts or allows
+you to sexually interact with other players. Players that you approach will
+only allow you to arouse them if they have a compatible sexual preference.
+For example, a straight female will not allow arousal by a gay female.
+
+Defense Points: Defense points are an indication of the amount of arousal
+by another player you can sustain before you submit to them. By using
+items on you, players will be able to reduce the your defense points until
+you submit. So obviously, the higher you defense points, the better off
+you are.[0m
+
+} T Erotica "help player" output
+
+
+HLPSHPS {
+[0;1;33mInformation on Shops:
+
+[0;1;37mIn general shops come in two types in the Erotica, either the shop sell or
+buy an item that you will carry in inventory, or the shop will sell you an
+item that is used as soon as you buy it. Most shops will consist of the
+first sort.
+
+Shops that buy and sell you items that are carried in your inventory are
+very unique in that unlike any other game they do keep track of what is
+in inventory. So if another player sells an item to the shop you can
+then buy it, it doesn't just disappear in to stock oblivion. But this
+can also be a drawback, because shops can only produce items so fast,
+so it is possible a shop could run out of an item! To see what items the
+shop has for sale just type "stock" and you will be given a list of the
+items which are currently in stock. To buy an item just simply type
+[0;1;33m"buy <item name>"[0;1;37m, to sell an item to a shop just type [0;1;33m"sell <item
+name>"[0;1;37m, and the shop will pay you appropriately for the item.
+
+In shops which sell you serices that are consumed right away, such as
+pubs, taverns, etc you will need to type [0;1;33m"menu"[0;1;37m to see what items the
+shop has available. To order something off the menu simply type[0;1;33m "buy
+<item name>"[0;1;37m.[0m
+
+} T Erotica "help shops" output
+
+
+BANKHLP {
+[0;1;33mInformation on the Bank:
+
+[0;1;37mBanks are a safe place to keep any money that you will not immediately need.
+Should some sort of nasty experience relieve you of all the money you are
+holding, you will still have a stash to fall back on if it is kept safe in
+the bank.
+
+To see how much money you have in the bank, simply type [0;1;33m"balance"[0;1;37m, and you
+will find out how much you currently have deposited in your bank account. If
+you want to make a deposit you would type:
+
+  [0;1;33m "deposit <amount to deposit>"
+
+[0;1;37mIf you want to make a withdrawal from the bank you would type:
+
+   [0;1;33m"withdraw <amount the withdraw>"[0m
+
+} T Erotica "help bank" output
+
+
+LIBHLP {
+[0;1;33mInformation on Librarys:
+
+[0;1;37mThe library contains a number of [0;1;33m"Books" [0;1;37mor text files which are some of
+the better fantasies that have been found lying around. Take a look through
+these, you just might learn something new!
+
+To see what books are in the library type [0;1;33m"catalog"[0;1;37m, and you will see a
+list of all of the books that the library has to offer. The list will
+contain the title of the book, and the Book's reference number. To read a
+book you will need to type [0;1;33m"read <refernece number of book>"[0;1;37m.[0m
+
+} T Erotica "help library" output
+
+
+HLPCSNO {
+[0;1;33mInformation on how to use the casinos:
+
+[0;1;37mThe casinos are very simple to use. All you need to do is type PLAY SLOTS
+and you will then step up and try your luck! The slots machines are one
+dollar slots, which means it costs one dollar for every play.
+
+To win you must match at least two numbers in a row, either the first two
+numbers or the last two numbers, in either case you would double your money
+and win ten dollars. If you match all three numbers you would quadruple
+your money and win forty dollars. Be careful not to lose everything![0m
+
+} T Erotica "help casino" output
+
+
+LSTHLP {
+[0;1;33mBrief List of Erotica commands:
+
+[0;1;37m Arouse <player>                          Erotica also supports
+ Down or D                                hundreds of player actions
+ Change                                   such as:
+ East or E
+ Help <subject>
+ Inventory or Inv or I                    Applaud
+ Look <player/item>                       Bow
+ Money                                    Cry
+ North or N                               Chuckle
+ Push <player>                            Grin
+ Say <word/phrase>                        Hug
+ Score                                    Hum
+ South or S                               Kick
+ Statistics or Stats   		          Pinch
+ Push <player>                            Pout
+ Up or U                                  Smile
+ West or W                                Yawn[0m
+
+} T Erotica "help list" output
+
+
+ARSHLP {
+[0;1;33mInformation on arousing other players:
+
+[0;1;37mTo have an encounter with another player you will need to type:
+
+       [0;1;33mArouse PlayerID
+
+[0;1;37mSo for example to arouse Sally, you would type [0;1;33m"arouse sally"[0;1;37m, and you would
+then begin your encounter with Sally. Remember that you must be sexually
+compatible, and have items in hand to have an encounter with another player.
+
+Once you begin the encounter you will be given a menu which lists the items
+that you currently have in your inventory. You can then select which item you
+want to use on the other player off this menu. You will need to continue to
+use items on the other player until you have successfully brought all of
+defenses down.
+
+Once you have seduced them, you will then be given another menu, from which
+you can choose a number of other options to [0;1;33m"finish off" [0;1;37mthe encounter.[0m
+
+} T Erotica "help arouse" output
+
+
+DISEHLP {
+[0;1;33mInformation on diseases:
+
+[0;1;37mWell, just like real life, being promiscuous has its disadvantages. If you
+have sex without using a condom (just have one in your inventory) your at
+risk for contracting a sexually transmitted disease. And yes, this is a bad
+thing!
+
+As long as you have the disease you will be weaker, and submit much easier
+to other players. But there is hope.
+
+If you go down to the emergency medical clinic, news has it that they are
+running a special on curing just such a thing. And for just ten bucks! But
+maybe the one dollar condom would have saved you the hearache. But remember
+a condom is only good for one encounter![0m
+
+} T Erotica "help disease" output
+
+
+QMPROF {
+Lets watch the language, eh?
+} T Erotica profanity rebuff
+
+
+COLOR1 {[0;1;36;40m} T
+
+
+COLOR2 {[0;1;32;40m} T
+
+
+COLOROFF {[0m} T
+
+
+WELC1 {[40m[2J[0;31m“  ¬ ÷ƒƒø “  ¬[5C“  ¬ ÷ƒƒø “  ¬ “ƒƒø[6Cƒ¬ƒ “  ¬  ÷ƒø ÷ƒ“ƒø[2;1H”ƒƒ¥ ∫  ≥ ∫  ≥[5C«ƒƒ¥ «ƒƒ¥ ”∑⁄Ÿ «ƒ[9C≥  ∫  ≥  ”ƒø   ∫[3;1H”ƒƒŸ ”ƒƒŸ ”ƒƒŸ[5C–  ¡ –  ¡  ”Ÿ  –ƒƒŸ[5C”ƒŸ  ”ƒƒŸ ”ƒƒŸ   –[4;1H“ƒƒø ÷ƒƒø ÷ƒ“ƒø “ƒƒø “ƒƒø “ƒƒø “ƒƒø[5C÷ƒ“ƒø[s
+[u “  ¬ “ƒƒø[5;1H«ƒ   ∫  ≥   ∫   «ƒ   «ƒ¬Ÿ «ƒ   ∫  ≥[7C∫   «ƒƒ¥ «ƒ[6;1H–ƒƒŸ –  ¡   –   –ƒƒŸ – ¡  –ƒƒŸ –ƒƒŸ[7C–   –  ¡ –ƒƒŸ o  o  o  o[7;1H[8;1H[9;1H[10;1H[1;35m…ÕÕÕÕÕ∏ …ÕÕÕÕÕÕ∏ …ÕÕÕÕÕÕ∏ …ÕÕÕÕÕ∏ …ÕÕÕ∏ …ÕÕÕÕÕ∏ …ÕÕÕÕÕÕ∏[11;1H∫ ’ÕÕÕæ ∫ ’ÕÕª ≥ ∫ [s
+[u’ÕÕª ≥ »Õª ’Õæ »ª ’æ ∫ ’Õª ≥ ∫ ’ÕÕª ≥[12;1H∫ ‘Õ∏   ∫ ‘ÕÕº ≥ ∫ ≥  ∫ ≥   ∫ ≥    ∫ ≥  ∫ ≥ »Õæ ∫ ‘ÕÕº ≥[13;1H∫ ’Õæ   ∫ ’Õª ’æ ∫ ≥  ∫ ≥   ∫ ≥    ∫ ≥  ∫ ≥ …Õ∏ ∫ ’ÕÕª ≥[14;1H∫ ‘ÕÕÕ∏ ∫ ≥ ∫ ‘∏ ∫ ‘ÕÕº ≥   ∫ ≥   …º ‘∏ ∫ ‘Õº ≥ ∫ ≥  ∫ ≥[5C[0;31m÷ƒø  ÷ƒƒø ÷ƒ[s
+[uƒø “ƒƒø[1;35m»ÕÕÕÕÕæ »Õæ »ÕÕæ »ÕÕÕÕÕÕæ   »Õæ   »ÕÕÕæ »ÕÕÕÕÕæ »Õæ  »Õæ[5C[0;31m÷ƒŸ  ∫  ≥ ∫  ≥ «ƒ[16;1H[61C”ƒƒŸ ”ƒƒŸ –  ¡ –ƒƒŸ[18;1H[22C[35mMBBS'S FIRST ADULT FANTASY GAME![19;1H[20;1H[13C(c) 2024 Elwynor Technologies and Rick Hadsall  
+[21;1H[22;1H[23;1H[24;1H[25;1H[0m} T zone ansi
+
+
+WELC2 {[40m[2J[9C[0;1;35m‹‹‹‹‹‹‹ ‹‹‹ ‹‹‹ ‹‹‹‹‹‹‹[7C‹‹‹‹‹‹‹ ‹‹‹[5C‹‹‹‹‹‹‹ ‹‹‹ ‹‹‹[2;1H[9C€ ‹‹‹‹€ € € € € € ‹ ‹ €[7C€ ‹‹‹ € € €[5C€ ‹‹‹ € €‹ﬂ€ﬂ‹€[3;1H[9C€ €‹‹‹‹ € €‹€ € € € € €[7C€ ‹‹‹‹€ € €‹‹‹‹ € ‹‹‹ €  ﬂ€ €ﬂ[4;1H[9C€‹‹‹‹‹€ €‹‹‹‹‹€ €‹€ﬂ€‹€[7C€‹[s
+[u€[5C€‹‹‹‹‹€ €‹€ €‹€   €‹€[5;1H[6;1H[7;1H[5;37;44m⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒø≥[0;1;44m‹€€€€€€€€€‹[1C‹€€€€€€€€‹[3C‹€€€€€€€‹[2C‹€€€€€€€€€€‹[2C‹€‹[3C‹€€€€€€€‹[3C‹€€€€€€€‹[1C[5m≥≥[40m[s
+[u[0;1;44m€€€€[4Cﬂﬂﬂ[1C€€€ﬂ[3Cﬂ€€€[1C€€€€ﬂﬂﬂ€€€€[1Cﬂﬂﬂﬂ€€€€ﬂﬂﬂﬂ[1C€€€€€[1C€€€€ﬂ[2Cﬂ€€€[1C€€€€ﬂﬂﬂ€€€€[5m≥≥[0;1;44m€€€€‹‹‹‹‹[3C€€€‹[3C‹€€€[1C€€€[5C€€€[5C€€€€[5C€€€€€[1C€€€€[8C€€€€‹‹‹€€€€[5m≥≥[0;1;44m€€€€ﬂﬂﬂﬂﬂ[3C€€€€€€€€€ﬂ[2C[40m[s
+[u[44m€€€[5C€€€[5C€€€€[5C€€€€€[1C€€€€[8C€€€€€€€€€€€[5m≥≥[0;1;44m€€€€[4C‹‹‹[1C€€€€[1Cﬂ€€€€‹[1C€€€€‹‹‹€€€€[5C€€€€[5C€€€€€[1C€€€€‹[2C‹€€€[1C€€€€[3C€€€€[5m≥≥[0;1;44mﬂ€€€€€€€€€ﬂ[1Cﬂ€€ﬂ[3Cﬂ€€ﬂ[2Cﬂ€€€€€€€ﬂ[6Cﬂ€€ﬂ[6Cﬂ€ﬂ[3Cﬂ€€€€€[40m[s
+[u[44m€€ﬂ[2Cﬂ€€ﬂ[3Cﬂ€€ﬂ[5m≥¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ[16;1H[17;1H[25C[0;1;33mMBBS'S FIRST ADULT FANTASY GAME![18;1H[19;1H[16C(c) 2024 Elwynor Technologies and Rick Hadsall  [20;1H
+[21;1H[22;1H[23;1H[24;1H[25;1H[0m} T cumplay ansi
+
+
+WELC3 {
+[40m[2J[0;1;44mEROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA[2;1H EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTIC[3;1H  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  ERO[40m[s
+[u[44mTICA  EROTICA  EROTI[4;1HA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROT[5;1HCA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  ERO[6;1HICA  EROTICA  EROTICA  EROTICA  EROTICA  ER[40m[s
+[u[44mOTICA  EROTICA  EROTICA  EROTICA  ER[7;1HTICA  ERO[40m⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒø[44mOTICA  E[8;1HOTICA  ER[40m≥ [33mﬂﬂﬂﬂﬂﬂﬂ ﬂﬂﬂﬂﬂﬂ    ﬂﬂﬂﬂﬂ   ﬂﬂﬂﬂﬂﬂﬂﬂ ﬂﬂﬂﬂﬂﬂ   ﬂﬂﬂﬂﬂ   ﬂﬂﬂﬂﬂ  [37m≥[0mRO[1;44mTIC[40m[s
+[u[44mA  [9;1HROTICA  E[40m≥ [31mﬂﬂ[6Cﬂﬂ   ﬂﬂ  ﬂﬂ   ﬂﬂ[5Cﬂﬂ[6Cﬂﬂ    ﬂﬂ   ﬂﬂ ﬂﬂ   ﬂﬂ [37m≥[0mER[1;44mOTICA [10;1HEROTICA  [40m≥ [35mﬂﬂﬂﬂﬂ   ﬂﬂﬂﬂﬂﬂ  ﬂﬂﬂ   ﬂﬂﬂ    ﬂﬂ[6Cﬂﬂ   ﬂﬂﬂ[6Cﬂﬂﬂﬂﬂﬂﬂ [37m≥ [0mE[1;44mROTICA[11;1H EROTICA [40m≥ [s
+[u[34mﬂﬂ[6Cﬂﬂ  ﬂﬂ   ﬂﬂ   ﬂﬂ[5Cﬂﬂ[6Cﬂﬂ    ﬂﬂ   ﬂﬂ ﬂﬂ   ﬂﬂ [37m≥  [44mEROTIC[12;1H  EROTICA[40m≥ [0;32mﬂﬂﬂﬂﬂﬂﬂ ﬂﬂ   ﬂﬂ   ﬂﬂﬂﬂﬂ[6Cﬂﬂ    ﬂﬂﬂﬂﬂﬂ   ﬂﬂﬂﬂﬂ  ﬂﬂ   ﬂﬂ [1;37m≥[0mA [44m [1mEROTI[13;1HA  EROTIC[40m¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ[s
+[uƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ[0mCA[44m  [1mEROT[14;1HCA  EROTICA [1C[0mEROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTIC[1;44mA  ERO[15;1HICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  ER[16;1HTI[40m[s
+[u[44mCA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  E[17;1HOTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  [18;1HROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA[40m[s
+[u[44m  EROTICA [19;1HEROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA  EROTICA[20;1H[21;1H[25C[33;40mMBBS'S FIRST ADULT FANTASY GAME![22;1H[16C(c) 2024 Elwynor Technologies and Rick Hadsall   [23;1H[24;1H[25;1H[0m} T erotica ansi
+
+
+WELC4 {
+
+			Welcome to the world of
+
+
+	   :::::: ::::::    ::::  :::::: ::   ::::     :::
+	   ::     ::   ::  ::  ::   ::   ::  ::  ::   :: ::
+	   ::::   ::::::  ::    ::  ::   :: ::       :::::::
+	   ::     ::  ::.  ::  ::   ::   ::  ::  ::  ::   ::
+	   :::::: ::   ::   ::::    ::   ::   ::::  ::     ::
+
+	     (c) 2024 Elwynor Technologies and Rick Hadsall
+		       The ONLY Adult game for Galacticomm
+
+
+} T Non-ANSI Welcome Screen
+
+
+JSTREAD {***
+[0;1;36m%s [0;1;37mis reading a book.[0m
+} T
+
+
+CATALOG {
+[36m/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+|      [0;1;33mLibrary Catalog of Books[0;36m      |
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/[0m
+[0;1;33mTitle                          Ref No.
+-----                          -------[0m
+A Doctor Visit                 REF1
+Art Class                      REF2
+Women--Chemical Analysis       REF3
+Sloppy Seconds                 REF4
+
+} T List of Library books in Erotica
+
+
+REF1 {
+[0;1;33mDoctor Visit:
+
+     [0;1;37mI love going to the doctor.  Not many women do, mind you, but mine is
+special.  Every time I go in for an examination, I come out from a treatment!
+
+     It starts out like any other office visit, but then when we get into the
+examination room, its a whole other world.  As he sits down at the table, he
+tells me to go behind the screen and undress.  I put on the paper gown and come
+out from behind the screen and sit on the table.  As he gets up to begin the
+exam, I notice an ever increasing bulge in his pants.
+
+     He comes over to me, removes the paper gown and starts to suck my tits.
+First he lightly licks the nipples, then he takes them in his mouth and starts
+to suck them.  As he sucks my tits I reach over and undo his pants.  I reach in
+and take hold of his now rock hard cock.  As I begin to rub his cock, he
+reaches down and starts to run a finger up and down my slit.
+
+     Naturally at this point I'm dripping wet and can't stand it any more.  I
+get down off the table and I start to suck on his cock.  First I lightly flick
+my tongue around the tip.  Then I start to move down the underside very slowly.
+This drives him absolutely wild!  As I get down to his balls, I start to suck
+on them while I rub his hard cock.  Just as he is about to explode, he grabs
+me, throws me on the table, opens my legs wide to expose my wet steamy cunt,
+and rams into me.  Right about now I'm starting to quiver and shake and he
+begins to match my rythym.
+
+     He starts to pump faster and harder while at the same time I reach around
+and grab his balls.  I grab both his balls and squeeze as hard as I can.  Just
+as I squeeze for the third time, he gives one final hard jam and cums.  Mind
+you, we both cum good and hard, but we can't make any noise because of the
+other patients.
+
+     But let me tell you...I sure as hell love going to the doctor![0m
+
+} T Erotica story
+
+
+REF2 {
+[0;1;33mArt Class:
+
+    [0;1;37mWorking as a male go-go dancer from Key West to Providencetown, I learned
+firsthand that often women can become pretty daring. While dancing, rotating
+my buns as I thread my way between the tables, I've had even the most
+prim-looking gray-haired ladies grope my crotch and go as far as to slip
+their nimble fingers between the elastic of my briefs.
+
+    Recently, I was enjoying some well-earned time off when a friend asked if
+I'd be interested in earning some easy money posing for a women's art club.
+Sure, I said, expecting anything but what happened.
+
+    Most of the women were older, mid-thirties and up, a lot of divorcees and
+several widows.  Everything went fine until I disrobed and took my position
+on the small elevated platform wearing only a skimpy bikini. One of the
+students, a svelte woman around forty, with firm, pointed tits and short-
+cropped, salt and pepper hair recognized me as a dancer from one of the local
+clubs. She got the other women revved up, and soon art went down the tubes as
+the class clustered around me pleading for a demonstration of my act.  They'd
+make it well worthwhile, they promised, with much more than I'd earn posing.
+I couldn't resist.
+
+    A few minutes into my bump-and-grind, thrusting my hips and cock at those
+horny, sex-starved art lovers, a tall striking blonde with soft melon boobs,
+leaped on stage and whisked off her wraparound skirt. She began to match my
+gyrations. Suddenly her blouse was sailing through the air and she unsnapped
+her bra, releasing her Dolly Parton-size jugs, jiggling them at me as she
+thrust her full round hips at my cock. By now my crotch was beginning to
+bulge. She spotted the outline of my growing erection and smiled, lips parted
+and tongue sticking out.
+
+    "I will if you will," she dared, sticking her thumbs beneath the elastic
+of her sheer pink bikini panties. A chorus of "Take it off!" filled the room.
+Money floated on stage at our feet. "Fuck it," I said. "Why not?"
+
+    I eased my briefs down over my hips and as my stiff dick sprung into view
+the whole group cheered. I was turned on by all of the adulation and my cock
+was rock-hard. I have this little trick where, by flexing my sphincter muscle,
+I'm able to make my dick jump up and down. I did it several times, waving at
+them, and the blonde ripped off her panties, dropped to her knees and lunged
+at my dick with her open mouth. She swallowed my entire nine-incher with one
+gasping gulp. Her warm mouth was drooling like crazy and after a few wet
+mouth-pumps, I was coated with her saliva.
+
+    She took my cock out of her mouth and knelt up straight, then stuck my
+dripping dong between those melon mammaries, molding the soft flesh around it,
+and began massaging me as I began to pump my hips, tit-fucking her.
+
+    The salt-and-pepper-haired broad climbed on stage and began licking the
+head of my cock as it slid between the blonde's quivering tits.
+
+    A torrent of women's clothes flew overhead;jerseys, bras, panties,
+pantyhose, all sizes and colors. After than everything happened so fast I
+couldn't keep track of the sexual free-for-all.
+
+    Cushions suddenly appeared on stage and I was being pushed down on them.
+A thin woman with a firm athletic body and clean-shaven cunt was impaling
+herself on my cock as an auburn-haired amazon lowered her flaming-red
+creaming pussy down on my mouth. I felt tongues flicking me all over, in my
+armpits, over my nipples, working over my toes, and burrowing into my belly
+button, the delicious slurping and sucking sounds blending with soft moans
+and excited cries.
+
+    My cock seemed to be everywhere at once--in mouths, between tits, large
+and soft, small and firm, in cunts, warm moist palms, some with long slender
+fingers, others short and pudgy.
+
+    I don't remember how many times I came that night, but I know was sore in
+the morning and couldn't get a hard-on for three days![0m
+
+} T Erotica story
+
+
+REF3 {
+[0;1;33mFEMALE ANALYSIS:
+
+[0;1;37mWomen--Chemical Analysis
+Element: Women
+Symbol: WO
+
+Discovered by: ADAM
+
+Atomic Weight: Average expected as 118, but there are known isotopes
+ranging from 100 to 160, with highly radioactive occurrences at 250 and
+better (avoid at all costs).
+
+Occurrence: Surplus quantities in all urban areas.
+    (except the general location referred to as POUGHKEEPSIE)
+
+Chemical Properties:
+1. Possesses great affinity for Gold(Au), silver(Ag), platinum(Pt), and
+   precious and semi-precious stones and minerals.
+2. Capable of absorbing great quantities of expensive substances.
+3. May explode spontaneously if left alone with male.
+4. Insoluble in liquids, but activity greatly increased with saturation
+   in ethanol (alcohol).
+5. Yields to pressure if applied to correct points.
+
+Mental Properties:
+1. Difficult to ascertain due to the nature of the thought process that
+   the specimen follows.
+   a) Revamped testing procedures are under study, but projected
+      realizations of test availability dates constantly slip.
+
+Physical Properties:
+1. Surface very smooth and soft, with many interesting irregularities,
+   usually selectively covered in painted films.
+   a) Avoid those that apply different colored films to each fingernail.
+   b) Some specimen will exhibit a tendency towards thick applications
+      of films resulting in eyes that look like they are bulging out
+      of there heads. Beware this variety as they may be prone to
+      cracking resulting in a realization of what you see ain't what
+      you get or lead poisoning.
+2. Boils at nothing and freezes without reason.
+3. Melts if given proper treatment.
+4. Bitter if used incorrectly.
+5. Found in various states in nature, ranging from virgin metal to
+   common ore.
+6. Selective specimens have pleasant aroma.
+7. Warm to hold. Capable of warming other objects it is held close to.(at
+   times causing overheating.
+
+Uses:
+1. Highly ornamental, especially in sports cars.
+2. Most powerful reducing agent of money known.
+3. Can aid in relaxation.
+4. Some versions capable of brightening the day.
+5. Can be used to stimulate the heart muscle of a male for what ever
+   reason.
+   a) Use with CAUTION. Positive and Negative results have been obtained
+      for a given stimuli depending on version.
+6. Some instrumental for starting GLOBAL WARFARE.
+7. Making dinner reservations.
+8. Excellent memories for tasks that males generally forget.
+9. With a minimum of flattery it is possible to get versions to perform
+   trivial tasks.
+
+Tests:
+1. Pure specimens turn rosy if discovered in natural state.
+2. Turns bright green if placed beside better specimen.
+3. Become coy when confronted with truth.
+
+Caution:
+1. Highly dangerous in inexperienced hands.
+2. Illegal  to possess more than one permanent specimen, in spite of the
+   fact that specimens can and do obtain possession of more than one
+   of the male gender, and, lie about it.
+3. Terrible drivers.
+4. Carry ear plugs to prevent ear damage due to spontaneous outbursts.
+5. Known for rendering telephones into melted slag.
+6. Affinity for rolling pins.
+7. Generally obtain lawyers for divorce settlements, that can expand
+   on the idea "weaker sex".[0m
+
+} T Erotica story
+
+
+REF4 {
+[0;1;33mSloppy Seconds:
+
+[0;1;37mMy kinkiest thrill is to make love to my wife knowing she has just had sex
+with another man.
+
+Recently I got up the courage to let me wife know of my desire. Little did
+I know she would help me live out my my dream.
+
+We have a neighbor who has always had his eye on Julie. One night she went
+over to borrow something to complete our dinner and when she returned she
+had a very odd look on her face. I asked her what was wrong and got an
+instant hard-on after she told me the story.
+
+It seems Steve was wearing a short robe with nothing under it. When he
+answered the door the robe parted and he took Julie's hand and placed it on
+his cock and and asked her if she wanted a little fun in the bedroom.
+
+I asked my wife what she had told him and she said she would think about it.
+I asked her what she wanted to do and she answered "it was totally up to
+me."
+
+Would I like to make love to her knowing I'm getting a freshly fucked pussy
+full of another man's cum?  Would I slide my tounge in her cum-filled cunt
+and taste her. I immediately pulled out a very hard dick from my pants as
+proof that I did indeed want to enjoy sloppy seconds. We went to bed
+shortly after dinner and made love like newlyweds.
+
+While we were talking about what might happen, Julie painted a picture in
+my mind ot the taste and smell of Steve's cum in her pussy and how it would
+feel when I slid into her used opening.
+
+The next evening Julie put on a short dress and a pair of sheer panties and
+kissed me at the door as she departed. She reminded me of how she would
+return and would expect me to kiss her again.
+
+For the next two hours. I wondered what was taking place at Steve's but
+when she returned home I could tell by her condition she had been stripped,
+ridden hard and sent away satisfied.
+
+She slipped out of her dress and stood in her panties and hose. She
+approached the bed and removed her cum soaked panties and placed them under
+my nose. One wiff left no doubt in my mind she had been royally fucked for
+the last two hours.
+
+Julie had me sit up as she reclined and spread the lips of her cunt. I saw
+Steve's cum leak from her freshly fucked slit. I got between her legs and
+licked and sucked her sloppy cunt until she begged me to stop.
+
+She whispered the whole story of what had happened. When Steve opened the
+door it didn't take him long to get out of his clothes and remove her dress
+and panties.
+
+He got very exicted and during a passionate sixty-nine session -- he had
+tried to cum in her mouth, but she wanted him to cum in her pussy. Julie
+let me know he had cum in her pussy twice and then came the surprise --
+once in her ass.
+
+I asked her why she returned so soon and she said she wanted to give me a
+taste of her used pussy to see it I liked it.
+
+For the next two hours I fucked Julie every which way but loose. It was the
+thought of getting sloppy seconds which kept me hard. Hard enough for three
+blastoffs. The thought of my cock splashing around in a pussy which was
+well creamed my another was too much. Just before I came the last time I
+made Julie promise to see Steve again. She said she was already looking
+forward to it.[0m
+
+} T Erotica story
+
+
+ERT1 {
+You are standing on Erotica Street. There is an exit to the south.
+
+} T Room description - Erotica
+
+
+ERT2 {
+You are standing on the corner of Bourbon and Erotica Street. There is an
+exit to the north, south and east.
+
+} T Room description - Erotica
+
+
+ERT3 {
+You are standing on Bourbon street. There is the Wet 'N Wild Bar to the north,
+and Bourbon Street continues to the east and west..
+
+} T Room description - Erotica
+
+
+ERT4 {
+You are in the Wet 'N Wild bar. You look around to see a jello wrestling ring
+in the back corner. This seems like your kinda place. There is an exit to
+Bourbon Street to the south.
+
+} T Room description - Erotica
+
+
+ERT5 {
+You are on Bourbon Street. There is Madame's Romp & Play to the south.
+Bourbon Street continues to the east and west.
+
+} T Room description - Erotica
+
+
+ERT6 {
+You are in Madame's Romp & Play. There is velvet red curtains and pictures
+of naked people on the walls. There is a private room to the west, and an
+exit to Bourbon Street to the north.
+
+} T Room description - Erotica
+
+
+ERT7 {
+You are in the private room of Madame's. You see a king-size water bed in
+the corner with mirrors on the ceiling.
+
+} T Room description - Erotica
+
+
+ERT8 {
+You are on the corner of Bourbon Street and Center Street. Bourbon Street
+continues to the east and west. Center Street continues to the south.
+
+} T Room description - Erotica
+
+
+ERT9 {
+You are standing on Bourbon Street and Wisconsin Avenue. There is Porn-O-Rama
+to the north, Bourbon Street continues to the west, and Wisconsin Avenue
+continues to the south.
+
+} T Room description - Erotica
+
+
+ERT10 {
+You are standing in Porn-O-Rama. You can't believe your eyes. They have
+every magazine you could imagine. There is an exit to Bourbon Street to the
+south.
+
+} T Room description - Erotica
+
+
+ERT11 {
+You are standing on Wisconsin Ave. The Melt Down Motel is to the west, and
+Hoops Bar is to the east, and Wisconsin Avenue continues to the north and
+south.
+
+} T Room description - Erotica
+
+
+ERT12 {
+You are standing in Hoops Bar. There is a gorgous blonde dancing naked on
+the bar. There is an exit to Wisconsin Avenue to the west.
+
+} T Room description - Erotica
+
+
+ERT13 {
+You are standing in the Melt Down Motel. There is a velvet picture of the
+dogs playing pool on the wall. You think to yourself, this is one classy
+place. There is an exit to Wisconsin Avenue to the east.
+
+} T Room description - Erotica
+
+
+ERT14 {
+You are standing on the corner of Wisconsin Avenue and Sunset Strip. Sunset
+Strip continues to the west and Wisconsin Avenue continues to the north.
+
+} T Room description - Erotica
+
+
+ERT15 {
+You are standing on Sunset Strip. There is Wax 'em Down Massage Palor to
+the south, Adam & Eve's Sex Store to the north, and Sunset Strip continues
+to the east and west.
+
+} T Room description - Erotica
+
+
+ERT16 {
+You are standing in the Wax 'em Down Massage Parlor. The place is decorated
+in black and white, modern style. There is an exit to Sunset Strip to the
+north.
+
+} T Room description - Erotica
+
+
+ERT17 {
+You are standing in Adam & Eve's Sex Store. You look around to see whips,
+handcuffs, ect.. everywhere. There's something for everyone. There is an
+exit to Sunset Strip to the south.
+
+} T Room description - Erotica
+
+
+ERT18 {
+You are in Dr. Techno's, the most popular night club in the Erotica city.
+The entire building is filled with bodies moving hypnotically to the fast
+moving bassy music. Rumor has it that the owner of this club is the main
+controller of a massive prostitution ring in Erotica City. There is an
+elevated bar to the west and a lounge to the south.
+
+} T Room description - Erotica
+
+
+ERT19 {
+You are in the lounge of Dr. Techno's. The perimeter of the lounge is lined
+with black leather sofas and is lit only by a massive neon sign on the wall
+which says, "Dr. Techno does it best."
+
+} T Room description - Erotica
+
+
+ERT20 {
+You are standing by the bar. To the east you see an ocean of people dancing
+in a rhythmatic sync to the music. Multi colored lights flash over the
+crowds of people and the entire building vibrates with every bass hit. One
+of the bartenders say, "Can I get you a drink, or are you just crowding my
+bar?"
+
+} T Room description - Erotica
+
+
+ERT21 {
+You are standing on Center Street, on the west side of the street is a
+ten story building with the top seven levels burned out from a fire. A huge
+neon sign on the front of the building reads, "Dr. Techno's". To the east
+is an alley
+
+} T Room description - Erotica
+
+
+ERT22 {
+You are in a rat infested ally. Piles of rotting garbage lie along the
+sides of the alley, eminating a stench which turns your stomach. You
+notice a small garage to the south.
+
+} T Room description - Erotica
+
+
+ERT23 {
+You are in a small garage. There is a workbench along the east wall of the
+buliding, and a few miscellaneous car parts lie scattered about.
+
+} T Room description - Erotica
+
+
+ERT24 {
+You are on Center Street. To the west is a large red brick building,
+Erotica's finest and only library. To the east is an older two story home.
+
+} T Room description - Erotica
+
+
+ERT25 {
+You look around to see slot machines everywhere. This is a one-armed-bandit's
+heaven. In the background you hear someone yell, "I won!" You figure this is
+a better place than any to try your luck. There is a bar to the south.
+
+} T Room description - Erotica
+
+
+ERT26 {
+You look to see gold trim everywhere. A chandelier hangs from the ceiling.
+The bartender behind the bar, is a beautiful tall red head.
+
+} T Room description - Erotica
+
+
+ERT27 {
+You see books everywhere. There is a special section marked XXX towards the
+back of the building. With a closer evaluation you notice that some of the
+books in this section are sticky. These books are for your pleasure.
+
+} T Room description - Erotica
+
+
+ERT28 {
+You are on Erotica Street, which continues to the north and south. To the
+east is a massive building which glitters with thousands of lights. A massive
+neon sign proclaims this building to be the "Golden Flamingo Casino".
+
+} T Room description - Erotica
+
+
+ERT29 {
+You see a woman sitting behind a desk, her breasts half out of her top. She
+looks up at you and smiles. She asks, "What can we help you with today?"
+
+} T Room description - Erotica
+
+
+ERT30 {
+You are on Erotica Street, which continues to the north. To the east is a
+large modern building. You see a sign above the doors saying, "Secured
+Savings".
+
+} T Room description - Erotica
+
+
+ERT31 {
+You are on a brightly polished marble floor. You can see exactly by the way
+it is decorated, where all the customers money goes. You see people at desks
+talking on the phone. There are three windows with tellers waiting to take
+your money.
+
+} T Room description - Erotica
+
+
+ERT32 {
+You are standing on Erotica Street. A massive hole from some construction
+will not allow you to go any further south. You figure maybe you'll try
+back and see if you can't get through some other time.
+
+} T Room description - Erotica
+
+
+ERT33 {
+You are standing on Sunset Strip. To the north you see Renee's Lingerie, to
+the west there is the Ruby office complex, and to the south is the Lonely
+Heart's cafe. Sunset Strip continues to the east.
+
+} T Room description - Erotica
+
+
+ERT34 {
+You are inside the Lonely Heart's cafe. It is a quaint little restaraunt
+with a few tables and chairs. You look up on the wall to see a menu. This
+looks like a good place to get a thick greasy hamburger. There is an exit
+to Sunset Strip to the north.
+
+} T Room description - Erotica
+
+
+ERT35 {
+You are in Renee's Lingerie, there are racks of teddys everywhere. All sorts
+of colors, shapes and sizes. There is a woman behind the counter who says to
+you, "Welcome to Renee's, feel free to look around, our playroom is upstairs
+if your interested." There are some stairs here.
+
+} T Room description - Erotica
+
+
+ERT36 {
+You can not believe your eyes, there is a wooden cross in front of you with
+handcuffs attached to the top and bottom. I looks like there has been many
+of people that have learned their lessons on this cross. There is a set of
+stairs that lead you down.
+
+} T Room description - Erotica
+
+
+ERT37 {
+You are standing the the hallway of the Ruby office complex. There is an
+office infront of you, and a hallway that leads to the north and south.
+
+} T Room description - Erotica
+
+
+ERT38 {
+There is a small desk infront of you that looks to be a reception desk.
+There is noone at the desk. She probably is out to lunch. You see a door
+to the north and one to the south.
+
+} T Room description - Erotica
+
+
+ERT39 {
+This looks like the presidents office. There is a big oak desk with a nice
+plush chair behind it. If you look out the window you can see the water
+fountain with the swans swiming around. There is a door the south and the
+east.
+
+} T Room description - Erotica
+
+
+ERT40 {
+You are in a hallway. There is a Nagel picture hanging on the wall. You see
+a set of stairs here, a door to the east that says "Men's Room", and the
+hallway continues to the south.
+
+} T Room description - Erotica
+
+
+ERT41 {
+You are in the Men's Room. There is two stalls and two urinals. There is a
+big mirror on the wall to make sure that you look your best. It is one of
+the cleanest restrooms you have ever seen.
+
+} T Room description - Erotica
+
+
+ERT42 {
+You are in what looks like the office's lunch room. There is a little fridge,
+a microwave and a table. You can smell the coffee brewing. You look out the
+window to see a nicely manicured lawn. There is a door to the north, and one
+to the east.
+
+} T Room description - Erotica
+
+
+ERT43 {
+You are in the hallway. You can see a door to the east that says "Women's
+Room". There is also a door to the west, stairs to the east and the hallway
+continues to the north.
+
+} T Room description - Erotica
+
+
+ERT44 {
+You are in the Women's Bathroom, it smell's like poupourri. There are four
+stalls and a full length mirror as well as a mirror by the sinks. There is
+also a red velvet chair in the corner.
+
+} T Room description - Erotica
+
+
+ERT45 {
+You are in what looks to be the computer room. There is a 486DX/66 in the
+corner of the room, and a color laser printer connected to it. You drool
+for a moment as you gaze at it. There is a door to your to the north and
+one to the east.
+
+} T Room description - Erotica
+
+
+ERT46 {
+This seems to be the secretary's office. There is a phone and a typewriter
+on the desk. There is a lot of papers to be typed and memo's everywhere.
+There is a door to the west, south and north.
+
+} T Room description - Erotica
+
+
+ERT47 {
+You are in the Sales Personnels office. There are thick books everywhere and
+papers piled high on the desk. A picture of his daughter sits among the mess.
+There is a door to the south and east.
+
+} T Room description - Erotica
+
+
+ERT48 {
+You are in the hallway. There is a set of stairs that goes down the south.
+You see a door to the east and west. The Hallway continues to the north.
+
+} T Room description - Erotica
+
+
+ERT49 {
+You are in the hallway. There is a door to the west and the east. The hallway
+continues to the north and south.
+
+} T Room description - Erotica
+
+
+ERT50 {
+You are in the hallway, there is a Monet on the wall. There is stairs to the
+north, a door to the east and west and the hallway continues to the south.
+
+} T Room description - Erotica
+
+
+ERT51 {
+This looks like the stock room. There are boxes piled high and dusty every-
+where. You wonder when the last time someone was in here. There is a door
+to the west.
+
+} T Room description - Erotica
+
+
+ERT52 {
+There are cubicals and phones everywhere. This must be the telemarketing
+room. All the phones have headsets to them. You wonder if this could be
+a 1-900 service. There is a door to the west and one to the north.
+
+} T Room description - Erotica
+
+
+ERT53 {
+You are not sure what this room is. There is a TRS something or other lying
+on the floor. Bits and pieces of other things are also here. There is a door
+to the west and one to the south.
+
+} T Room description - Erotica
+
+
+ERT54 {
+You are standing on Eden St. To the north you see a small building with
+flashing neon, which says "Applesgate's Forbidden Massage Palor". There
+is an emergency medical clinic to the south. Eden Street continues to the
+west and east.
+
+} T Room description - Erotica
+
+
+ERT55 {
+You are in Applegate's Massage Parlor. There is a strong looking man
+at the front desk looking over the appointment book. There is a room
+to the north and Eden Street is to the south.
+
+} T Room description - Erotica
+
+
+ERT56 {
+You are in the massage room of Applegate's Massage Palor. There is a
+long table in the middle of the room. You see a table in the corner
+with scented oils and feathers.
+
+} T Room description - Erotica
+
+
+ERT57 {
+You are on Eden Street. If you look to the south you see Eden's Place,
+the best whore house in town. Eden Street conintues to the west and east.
+
+} T Room description - Erotica
+
+
+ERT58 {
+You are in Eden's Place. You see the a sign on the table that says,
+"Under New Management, Reopening Soon!"
+
+} T Room description - Erotica
+
+
+ERT59 {
+You are in the middle of Eden Street. In front of you is a stairs going
+down to the old subway that doesn't exists anymore. It has become like
+an underground city.
+
+} T Room description - Erotica
+
+
+ERT60 {
+You are at the bottom of the entrance to the subway. You can go up to
+Eden Street or go east into the subway.
+
+} T Room description - Erotica
+
+
+ERT61 {
+You are in the old subway. There is a Mens Room to the north and a
+Womens Room the the south.
+
+} T Room description - Erotica
+
+
+ERT62 {
+You are in the subway. There are exits to the north, south, east and
+west. There is a bum sitting on a bench half asleep with a wine bottle
+in his hand.
+
+} T Room description - Erotica
+
+
+ERT63 {
+You are in the subway. There are exits to the north and south.
+
+} T Room description - Erotica
+
+
+ERT64 {
+You are standing at the bottom of the entrance to the subway. You
+can go up to Bourbon Street or go south into the Subway.
+
+} T Room description - Erotica
+
+
+ERT65 {
+You are in the heart of the subway. To the south is a old newspaper
+stand. The subway continues to the north and east.
+
+} T Room description - Erotica
+
+
+ERT66 {
+You are in the subway. There is graffitti all over the walls. You read
+one that says, "If they can't take a joke, fuck'em!". The subway continues
+to the east and west.
+
+} T Room description - Erotica
+
+
+ERT67 {
+You are in the subway. There is garbage everywhere. It continues to
+the west and south.
+
+} T Room description - Erotica
+
+
+ERT68 {
+You are in the subway. Your foot gets stuck on an old piece of gum on
+the floor. You manage to get your foot free. There is an exit to the
+north and east.
+
+} T Room description - Erotica
+
+
+ERT69 {
+You are at the bottom of the entrance to the subway from Sunset Street.
+You can continue into the subway by going west or go up to get to Sunset.
+
+} T Room description - Erotica
+
+
+ERT70 {
+You are in the subway. It continues to the north and west.
+
+} T Room description - Erotica
+
+
+ERT71 {
+You are in the subway. There is an aweful smell that is making your
+stomach sick. You can go south or east.
+
+} T Room description - Erotica
+
+
+ERT72 {
+You are in the subway. There is an old cafeteria to the south and the
+subway continues to the north.
+
+} T Room description - Erotica
+
+
+ERT73 {
+You are in the subway, there is some graffitti on the wall, you read one
+that says,"Incest is best, put your sister to the test!". You can go
+north or south.
+
+} T Room description - Erotica
+
+
+ERT74 {
+You are at the bottom of the entrance in to the subway from Bourbon
+Street. You can go up to Bourbon Street or south into the subway.
+
+} T Room description - Erotica
+
+
+ERT75 {
+You are in an old abandon cafeteria. There is tables everywhere and
+in the front of the room is the serving area. It looks like there
+is something growing in one of the corners. You can go back into the
+subway by going north.
+
+} T Room description - Erotica
+
+
+ERT76 {
+You are in the womens bathroom. The smell is unbelieveable. You try to
+turn on a faucet but all that comes out it some green stuff. You can
+go to the north.
+
+} T Room description - Erotica
+
+
+ERT77 {
+You are in the mens bathroom. There is 3 urnals and 2 stalls. The urnals
+have become permanently stained yellow. The place could use some of those
+little freshiner discs. You can exit to the south.
+
+} T Room description - Erotica
+
+
+ERT78 {
+You look around to see old newspapers and magazines. It looks like this
+newspaper stand hasn't been used in years. The subway is to the north.
+
+} T Room description - Erotica
+
+
+ERT79 {
+You are in an emergency medical clinic. There is a doctor here standing
+behind the counter waiting to serve you. You notice a sign on the wall.
+
+} T Room description - Erotica
+
+
+SEXMF {
+[0;1;37mYou grab [0;1;35m%s[0;1;37m and kiss her passionately. She can feel your cock getting
+hard. You unzip [0;1;35m%s's [0;1;37mdress and let it fall to the ground. You see her
+large full breasts and shaven pussy. You take off your clothing to reveal
+your large cock. You bend [0;1;35m%s [0;1;37mover and insert your cock into her wet cunt.
+[0;1;35m%s [0;1;37mlets out a moan of pleasure. Her pussy is very wet and tight. You
+start pumping harder and harder until you can no longer hold back, and
+cum deep inside of [0;1;35m%s's [0;1;37mpussy.[0m
+
+} T Male having sex with a female description
+
+
+SEXFM {
+[0;1;35m%s [0;1;37mstands before you. You look down to see a big bulge in his pants.
+You command [0;1;35m%s [0;1;37mto remove his clothing. You can see that his cock is
+hard and ready for you. He walks over and removes your clothing, teasing
+your nipples in the process. You make him lie down in front of you. You
+straddle [0;1;35m%s [0;1;37mand lower your wet pussy onto his hard and waiting shaft.
+You move your hips back and forth letting his cock hit your clit.
+Within minutes you begin to cum and you can feel your juices running
+down his balls. The twitching of your muscles excites him so much that
+he cums deep inside of you. You collapse in [0;1;35m%s's [0;1;37marms.[0m
+
+} T Female having sex with a male description
+
+
+SEXFF {
+[0;1;35m%s [0;1;37mis a beautiful woman, she lies before you. Her breast are full
+and nipples are perky. You look down to see that [0;1;35m%s [0;1;37mhas shaven her
+pussy in the shape of a heart. This excites you, and makes you want to
+lick it. She smiles at you as [0;1;35m%s [0;1;37mpulls out a double sided dildo. She
+leans over you and starts to move it across your body. You know what she
+wants and take it from her. You insert it into [0;1;35m%s's [0;1;37mwet cunt. You get it
+as far as you can, then you stand over her and insert the other end into
+your pussy. It feels so good to have something inside of you. She sits
+partialy up and starts to rub your clit. You oblige by doing the same.
+You take some of her pussy juice and rub it on her nipples then lick
+it off. Then you let [0;1;35m%s [0;1;37mlick what is left on your fingers. [0;1;35m%s[0;1;37m
+begins to rock her hips which moves the dildo in your cunt. She begins
+to cum, which excites you enough to make you cum. After you both have
+finished, [0;1;35m%s [0;1;37mtakes the dildo from the two of you and licks your cum off
+off it.[0m
+
+} T Female having sex with female descripition
+
+
+SEXM2M {
+[0;1;35m%s [0;1;37mis bent in front of you for your every need. You take the tube
+of K-Y Jelly a smear the thick liquid on to your rock hard cock.
+To take some of the jelly and rub it on to [0;1;35m%s's [0;1;37mwaiting hole. You
+start to pressure your cock against his asshole, splitting open a
+little. You hear [0;1;35m%s [0;1;37mlet out a moan. You press hard to have your
+whole cock enter his tight ass. You look down to see him play with
+his own cock. You pump harder and scream your going to cum, and
+with that you let your load of cum in to his ass. At the same
+time, he cums all over himself. You pull out of him and lay next
+to [0;1;35m%s [0;1;37min contentment.[0m
+
+} T Man having sex with man
+
+
+ORLM2M {
+[0;1;35m%s [0;1;37mkneels in front of you, your cock as hard as a rock. [0;1;35m%s [0;1;37mstarts
+to lick your cock up and down lick a lollypop. Then he takes your
+whole cock into his mouth. A wave a pleasure rushes through your
+body as [0;1;35m%s [0;1;37msucks harder and faster. You feel your balls get hotter
+and tighter to your body. You can't last any longer and cum hard
+into [0;1;35m%s's [0;1;37mmouth. He swallows what he can and licks up the rest.
+[0;1;35m%s's [0;1;37mlooks up at you with a big smile.[0m
+
+} T Male receiving oral sex from male
+
+
+ORLFM2M {
+[0;1;37mYou kneel in front of [0;1;35m%s[0;1;37m. His cock 8" and hard. You can't wait to
+suck on it. You lean down and lick his balls, you hear a moan
+from [0;1;35m%s. [0;1;37mYou then start up the shaft and to the head. You lick
+the top of the head and run your tongue around it. Then you take
+[0;1;35m%s's [0;1;37mwhole cock into your mouth. At the same time you play with his
+balls with your hands. [0;1;35m%s [0;1;37mputs his hands on your head a guides
+it. You can feel him getting close and start to suck harder and
+faster. You feel his hot cum in your mouth and swallow it all. [0;1;35m%s[0;1;37m
+looks down and says "that's the best suck I've every had". You
+just look back and smile.[0m
+
+} T Male giving oral sex to male
+
+
+ORL2F2F {
+[0;1;35m%s [0;1;37mlays in front of you with her legs spread wide. You can't wait to lick
+that wet pussy of her's. You take your fingers and spread her lips apart.
+It is already wet and her clit is hard and sticking out. You take your
+tongue and lick [0;1;35m%s's [0;1;37mclit. She lets out a loud moan. While you are licking
+her, you insert one finger inside of her. You look up to see that [0;1;35m%s [0;1;37mis
+playing with her tits. Her nipples are very hard. You move your finger in
+and out of her tight cunt as you lick and suck her clit. [0;1;35m%s [0;1;37mstarts to buck
+her hips, and you fell a gush of hot juices on your fingers. When she is
+done cuming, you take your finger and spread her cum on her nipples and
+lick it off.
+
+} T Female giving oral sex to female
+
+
+ORLFF2F {
+[0;1;35m%s [0;1;37mlays you in front of her. She kisses you long and hard, exploreing every
+part of your mouth with her tounge. She moves down to your nipples, licking
+them, biting them, teasing them. [0;1;35m%s [0;1;37mtake her tongue and moves it down your
+stomach, your pussy aching the closer she gets. You can feel your juice
+flowing out, just waiting to be tasted. [0;1;35m%s [0;1;37mtake her hands and parts your
+cunt. She takes her tongue and licks from the bottom to the top of your
+pussy. Making sure she hits the clit on the way. Then[0;1;35m %s [0;1;37mstart to suck on
+your clit, rolling between her lips. You can feel yourself getting close.
+She sticks 2 fingers into your wet pussy and moves them around. This drives
+you nuts, and cant hold on any longer. You start to cum, and [0;1;35m%s [0;1;37mmoves her
+fingers up to your clit and sticks her tongue as far in your cunt as it can
+go. This excites you so much that you cum again right after the first.
+She removes her head and looks at you. [0;1;35m%s [0;1;37msays "Ready for more??". You
+just smile and lay back for the ride.[0m
+
+} T Female recieving oral sex from female
+
+
+ORL2M2F {
+[0;1;37mYou lay [0;1;35m%s [0;1;37mdown in front of you, her shaven pussy waiting to be licked.
+%s spreads her legs wide as you kneel in front of her. You take your fingers
+and spread [0;1;35m%s's [0;1;37mcunt lips open to see her clit. You flick your tongue over
+[0;1;35m%s's [0;1;37mclit, making her moan. You stick one finger inside her pussy as you
+lick harder, then two fingers. [0;1;35m%s [0;1;37mstarts to buck her hips and cums all
+over your fingers. You take your fingers out and lick [0;1;35m%s's [0;1;37mcum off of
+them.[0m
+
+} T Male giving oral sex to female description
+
+
+ORL2F2M {
+[0;1;35m%s [0;1;37mstands in front of you and drops his pants to the floor to uncover an
+eight inch cock as hard as could be. You cant wait to suck on it. You
+kneel in front of him and take[0;1;35m %s's [0;1;37mcock in your hands. You move them down
+to his balls as you take [0;1;35m%s's [0;1;37mwhole cock in your mouth. You suck and lick
+it at the same time, as your fingers massage his balls. He takes your head
+in his hands and moves it in rhythm. You suck harder as you hear him moan
+louder. [0;1;35m%s [0;1;37mscreams "I'm going to cum", and with that you feel [0;1;35m%s's [0;1;37mhot
+cum in your mouth. There is so much, some runs down your chest. He looks
+down and smiles.[0m
+
+} T Female giving oral sex to male description
+
+
+ORLFM2F {
+[0;1;35m%s [0;1;37mrips your underwear off and is stunned a moment by your wet mound. He
+takes you and lays you down in front of him. [0;1;35m%s [0;1;37mstarts to lick your nipples,
+biting, teasing them with his tongue. Then he moves down your stomach to your
+waiting pussy. [0;1;35m%s [0;1;37mseperates your lips and flicks his tongue over your hard
+clit. You can't help but moan. He takes one finger and inserts it into your
+cunt, then he inserts another as he still licks your clit. You can feel
+yourself getting close and start to grind your hips against his mouth. [0;1;35m%s
+[0;1;37mlicks harder as he moves his fingers in and out of your wet pussy. You can't
+take anymore and start to cum. You can feel your muscles tighten against
+[0;1;35m%s [0;1;37mfingers. After you are finished he brings his fingers up to you to
+lick off your own cum from [0;1;35m%s [0;1;37mfingers.[0m
+
+} T Female recieving oral sex from male description
+
+
+ORLFF2M {
+[0;1;35m%s [0;1;37mstands in front of you and demands that you remove your pants. You do as
+you are told. Then [0;1;35m%s [0;1;37msays "I am going to suck your cock like it has never
+been sucked before!" She drops before you and takes your cock in her hands.
+One hand goes down to your balls as the other strokes you. Then [0;1;35m%s [0;1;37mtakes your
+hard cock into her mouth with her hands still around it and moves her hand
+in rhythm with her mouth. She still works your balls with the other as she
+takes your whole cock down her throat. You can feel yourself about to cum and
+tell her. [0;1;35m%s [0;1;37mtells you that she wants you to cum in her mouth, she wants to
+taste you and you better not dissapoint her. With that [0;1;35m%s [0;1;37mremoves her hand
+for a moment to spank you very hard on the ass. You start to cum in her mouth.
+She drinks ever drop, and licks the tip to make sure. [0;1;35m%s [0;1;37mlooks up at you and
+says you are the best tasting she has ever had.[0m
+
+} T Male recieving oral sex from female description
+
+
+R1 {***
+[0;1;37mSally is a young woman of about the age of eighteen. She is wearing a black
+leather mini skirt and a cut off top which leaves little to the imagination.
+She is also wearing a pair of black net nylons, and 4 inch spikes.[0m
+} T Description of NPC - 1
+
+
+R2 {***
+The bartender is a male, in his mid twenties. He is wearing a pair of tight
+black jeans, and a "beer-wolf" T-shirt. He has wavy blonde hair and light
+blue eyes.
+} T Description of NPC - 2
+
+
+R3 {***
+The bartender is a female in her early thirties. She is wearing a plunging
+blouse with a short suede mini skirt. She has long red hair and green eyes.
+} T Description of NPC - 3
+
+
+R4 {***
+Robin is a tall, slender, well endowed brown haired woman. She is wearing a
+white lace bra with matching panties and garter belt.
+} T Description of NPC - 4
+
+
+R5 {***
+Jane is a petite, sexy, auburn haired female. She has mesmerizing green eyes.
+She is wearing a black teddy that leaves nothing to the imagination.
+} T Description of NPC - 5
+
+
+R6 {***
+Terri is a thin red head. She is wearing a long red nightgown with a slit
+that goes all the way up to her hip.
+} T Description of NPC - 6
+
+
+R7 {***
+
+} T Description of NPC - 7
+
+
+ITM001 {[0;1;37mYou see a small package with the words french tickler, it contains one
+[0;1;34mcondom[0;1;37m.[0m
+} T Description of condom
+
+
+ITM002 {[0;1;37mYou see a shiney, new pair of [0;1;34mhandcuffs [0;1;37m-- police issue. Keys not included.[0m
+} T Description of handcuffs
+
+
+ITM003 {[0;1;37mYou see a small bottle with the words [0;1;34mspanish-fly [0;1;37mon it, in small print
+below there is a warning, "Not responsible for overexertion."[0m
+} T Description of spanish-fly
+
+
+ITM004 {[0;1;37mYou see a long white tube-like [0;1;34mvibrator[0;1;37m. This one is extra large, it
+takes for 'D' size batteries.[0m
+} T Description of vibrator
+
+
+ITM005 {[0;1;37mYou see a long leather [0;1;34mwhip [0;1;37mwith tassles on the ends, perfect for all
+your household needs.[0m
+} T Description of whip
+
+
+ITM006 {[0;1;37mYou see a white [0;1;34msilk scarf[0;1;37m, all that is missing is the ice pick.[0m
+} T Description of silk scarf
+
+
+ITM007 {[0;1;37mYou look and see a thick magazine with the name [0;1;34mPlay House[0;1;37m on it. For
+some reason all of the pages are stuck together.[0m
+} T Description of magazine
+
+
+ITM008 {[0;1;37mYou look and see a small shiney [0;1;34mkey[0;1;37m, handcuffs not included.[0m
+} T Description of handcuff key
+
+
+ITM009 {[0;1;37mYou see a small bottle of medication called [0;1;34mSexacillin[0;1;37m, in small print you
+see, "Take one as needed for insect repellent. Use only as directed."[0m
+} T Description of sexacillin
+
+
+ITM010 {[0;1;37mYou see a belt made of leather and chains, once called a [0;1;34mChastity Belt[0;1;37m
+In the front, imprinted with studs it says, "Do not enter, private property."[0m
+} T Description of chastity belt
+
+
+ITM011 {[0;1;37mYou see a small vial containing a pink fluid, the name on it is
+[0;1;34mUnsubmissive Postion[0;1;37m. Below that it says "You can whip me, but
+you can't beat me."[0m
+} T Description of unsubmissive potion
+
+
+ITM012 {[0;1;37mYou a dainty pair of gold [0;1;34mscissors[0;1;37m, the next best thing to an ice pick.[0m
+} T Description of scissors
+
+
+ITM013 {[0;1;37mYou see a pair of very dark, horn rimmed [0;1;34mglasses[0;1;37m. See no evil, do no evil.[0m
+} T Description of glasses
+
+
+ITM014 {[0;1;37mYou are looking at a small [0;1;34mdart-gun[0;1;37m, which looks alot like a kids toy but
+modified especially to fend off thieves.[0m
+} T Description of dart-gun
+
+
+SLOTS {
+
+  [0;1;33m._________.
+  [0;1;33m|[1;5;31mCasino[0m   [0;1;33m|
+  [0;1;33m|    [1;5;31mSlots[0m[0;1;33m| o
+  |__|_|_|__| |
+  |[0m  [0;1;37m%d %d %d  [0;1;33m| |
+  |__-_-_-__|/
+  |___[0;1;37m###[0;1;33m___|[0m
+
+} T Slot machine
+
+
+LSTGLD {***
+[0;1;37mYou just lost a dollar![0m
+} T Slot losing message
+
+
+WONGLD {***
+[0;1;37mYou just won %d dollars![0m
+} T Slot winning message
+
+
+GODSPEAK {***
+Suddenly you feel as if your soul has been uplifted. You are humbled by
+the invisible omnicient presence here with you.
+} T
+
+
+EARTHQ {***
+You are suddenly thrown off balance as the earth begins to shake beneath
+your feet. As the tremor passes a silence momentarily blankets the land
+and you feel at ease to continue your journey.
+} T
+
+
+VISOMSG {***
+Your mind begins to wander as you fall into a sub-conciousness state.
+Suddenly rememberances of the past come together with the present, and
+you receive a vision: %s
+} T
+
+
+FAIRYMSG {***
+From out of nowhere, a small fairy suddenly flies up to you and
+whispers in your ear: %s
+***
+The fairy then flies away!
+} T
+
+
+NAMEPROB {
+Your characters name must be longer than 2 characters long, but not longer
+than 15 characters, and can not be more than word (EG: No spaces allowed).
+} T
+
+
+EXITS {Obvious Exits:} T
+
+
+INNMENU {
+[1;34m/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+|             [36mInn Menu[1;34m               |
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/[0m
+     Stew                 3 sch
+     Steak                6 sch
+     Ale                  3 sch
+
+} T
+
+
+PUBMENU {
+[1;34m/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+|             [31mBar Menu[1;34m               |
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/[1;34m
+|  				     |
+|    [31mSlippery-Nipple      $1   [1;34m      |
+|    [31mSex-on-the-Beach      2   [1;34m      |
+|    [31mSlow-Screw            1   [1;34m      |
+|    [31mBlow-Job              2   [1;34m      |
+|    [31mOrgasm                2   [1;34m      |
+|                                    |
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/[0m
+
+} T Bar menu
+
+
+LOOKCN {***
+[0;1;36m%s [0;1;37mis looking quite confused![0m
+} T
+
+
+UHHUH {[0;1;37mWhat?![0m
+} T
+
+
+SEREXP {[0;1;37mYou seriously expect to %s %s %s %s[0;1;37m, eh?[0m
+} T
+
+
+WHAGAB {[0;1;37mWhat are you babbling about?[0m
+} T
+
+
+WHYTHT {[0;1;37mWhy would you want to %s %s?[0m
+} T
+
+
+HEYGIV {[0;1;37mI'm sorry, but I don't understand.[0m
+} T
+
+
+ENTKEY {
+<Enter Key} T
+
+
+NOOPEN {***
+The door did not open.
+} T
+
+
+MUSTBL {[0;1;37mSorry, you must be [0;1;36m"live" [0;1;37mto do that![0m
+} T
+
+
+TYHELP {[0;1;37mType [0;1;33m"help" [0;1;37mfor assistance.[0m
+} T
+
+
+SNOTHR {[0;1;37mSorry, there is no [0;1;36m"%s" [0;1;37mhere![0m
+} T
+
+
+SWHOWT {[0;1;36m%s [0;1;37mwho? [0;1;36m%s [0;1;37mwhat?[0m
+} T
+
+
+HEARSU {[0;1;36m%s [0;1;37mhears you![0m
+} T
+
+
+ARENTH {[0;1;37mYou aren't holding [0;1;34m%s[0;1;37m![0m
+} T
+
+
+NOEXIT {[0;1;37mThere is no exit to the [0;1;33m"%s"[0;1;37m![0m
+} T
+
+
+CAUGHT {[0;1;37mYou caught [0;1;36m"%s"[0;1;37m off guard![0m
+} T
+
+
+SNOTHL {[0;1;36m%s [0;1;37mis not holding [0;1;34m%s[0;1;37m![0m
+} T
+
+
+UMADED {[0;1;37mGood show, you made [0;1;36m%s [0;1;37mdrop [0;1;36m%s [0;1;34m%s[0;1;37m![0m
+} T
+
+
+UNSURE {***
+[0;1;36m%s [0;1;37mis unsure of what to say![0m
+} T
+
+
+SHADES {***
+[0;1;36m%s [0;1;37mis turning shades of purple and green![0m
+} T
+
+
+NEARBY {***
+[0;1;37mYou hear a voice nearby![0m
+} T
+
+
+LKSTRA {***
+[0;1;36m%s [0;1;37mis looking a little strange![0m
+} T
+
+
+BNASTY {***
+[0;1;36m%s [0;1;37mis being nasty![0m
+} T
+
+
+WHIS2U {***
+[0;1;36m%s [0;1;37mwhispers to you:[0;1;33m %s[0m
+} T
+
+
+WHIS2S {***
+[0;1;36m%s [0;1;37mis whispering to [0;1;36m%s[0;1;37m![0m
+} T
+
+
+LKEXAS {***
+[0;1;36m%s [0;1;37mis looking exasperated![0m
+} T
+
+
+SINGLD {***
+[0;1;36m%s [0;1;37mis %sing loudly![0m
+} T
+
+
+SINGNR {***
+[0;1;37mSomeone is %sing nearby![0m
+} T
+
+
+SINGDS {***
+[0;1;37mYou hear someone %sing in the distance![0m
+} T
+
+
+BRUDEV {***
+[0;1;36m%s [0;1;37mis being rude and vulgar![0m
+} T
+
+
+DAYDRM {***
+[0;1;36m%s [0;1;37mis daydreaming with a smile.[0m
+} T
+
+
+PONDPS {***
+[0;1;36m%s [0;1;37mis pondering existance![0m
+} T
+
+
+ACRUDE {***
+[0;1;36m%s [0;1;37mis acting crude and nasty![0m
+} T
+
+
+ATTSTS {***
+[0;1;36m%s [0;1;37mis attempting to %s the %s![0m
+} T
+
+
+ATTSSS {***
+[0;1;36m%s [0;1;37mis attempting to %s %s %s![0m
+} T
+
+
+GIVUAS {***
+[0;1;36m%s [0;1;37mhas just given you a [0;1;34m%s[0;1;37m![0m
+} T
+
+
+GIVSAS {***
+[0;1;36m%s [0;1;37mhas just given [0;1;36m%s [0;1;37ma [3;1;34m%s![0m
+} T
+
+
+BESTSU {***
+[0;1;36m%s [0;1;37mis doing %s best to %s you![0m
+} T
+
+
+BESTSS {***
+[0;1;36m%s [0;1;37mis doing %s best to %s %s![0m
+} T
+
+
+CLUTCH {***
+[0;1;36m%s [0;1;37mis clutching at shadows on the walls![0m
+} T
+
+
+FUMBLE {***
+[0;1;36m%s [0;1;37mis fumbling around foolishly![0m
+} T
+
+
+SEETHN {***
+[0;1;36m%s [0;1;37mis seeing things![0m
+} T
+
+
+LK4SOM {***
+[0;1;36m%s [0;1;37mis looking for something![0m
+} T
+
+
+WRSMYS {***
+[0;1;36m%s [0;1;37mis wrestling with some mystical force![0m
+} T
+
+
+DROPSS {***
+[0;1;36m%s [0;1;37mjust dropped %s [0;1;34m%s [0;1;37mby mistake![0m
+} T
+
+
+GIVUDP {***
+[0;1;36m%s [0;1;37mjust gave you [0;1;34m%s[0;1;37m, which made you drop your [0;1;34m%s[0;1;37m![0m
+} T
+
+
+GIVSDP {***
+[0;1;36m%s [0;1;37mjust gave [0;1;36m%s [0;1;34m%s[0;1;37m, which made [0;1;36m%s [0;1;37mdrop %s [0;1;34m%s[0;1;37m![0m
+} T
+
+
+GIVEUS {***
+[0;1;36m%s [0;1;37mhas just given you [0;1;34m%s[0;1;37m![0m
+} T
+
+
+GIVESS {***
+%s has just given %s %s!
+} T
+
+
+SFREAK {***
+%s is freaking out!
+} T
+
+
+SSEEIN {***
+%s is seeing things!
+} T
+
+
+LKSUSP {***
+%s is looking suspicious!
+} T
+
+
+FUMBIT {***
+%s is fumbling around with %s items!
+} T
+
+
+STEALU {***
+%s is trying to steal your %s!
+} T
+
+
+STEALS {***
+%s is trying to steal %s's %s!
+} T
+
+
+STOLEU {***
+%s just stole your %s!
+} T
+
+
+STOLES {***
+%s just stole %s's %s!
+} T
+
+
+BYHELP {***
+%s is beyond help.
+} T
+
+
+GGLINT {***
+%s has a greedy glint in %s eye!
+} T
+
+
+STOOKS {***
+%s has just taken the %s.
+} T
+
+
+BLUNDR {***
+%s is blundering around clumsily!
+} T
+
+
+SEXMTS {***
+%s is examining the %s!
+} T
+
+
+SEXMSS {***
+%s is examining %s %s!
+} T
+
+
+LKUCAR {***
+%s is looking at you carefully!
+} T
+
+
+SEXAMS {***
+%s is looking closely at %s!
+} T
+
+
+GLIMPS {***
+%s is glimpsing about the room!
+} T
+
+
+STARTA {***
+%s is staring into thin air!
+} T
+
+
+SCARFI {***
+%s is carefully inspecting the surroundings!
+} T
+
+
+HAVHAL {***
+%s is having hallucinations!
+} T
+
+
+MEDEMR {***
+%s is having a medical emergency!
+} T
+
+
+SHOVUS {***
+%s has just shoved you %s!
+} T
+
+
+GRAPAF {***
+%s is grappling with arcane forces!
+} T
+
+
+SDROPS {***
+%s dropped %s %s!
+} T
+
+
+ACTODD {***
+%s is acting oddly!
+} T
+
+
+LILQUR {***
+%s is looking a little queer!
+} T
+
+
+WINKGR {***
+%s is winking with a grin!
+} T
+
+
+WINKSL {***
+%s has just winked at you rather slyly!
+} T
+
+
+WINKSS {***
+%s is winking slyly at %s!
+} T
+
+
+FLBLUE {***
+%s's eyes have just flashed with a blue light!
+} T
+
+
+GLARAN {***
+%s glaring angrily around the room!
+} T
+
+
+GLARUR {***
+%s is glaring at you with rage!
+} T
+
+
+GLARSA {***
+%s is glaring at %s in anger!
+} T
+
+
+AGLINT {***
+%s's eyes have an angry glint in them!
+} T
+
+
+NTG2SAY {Nothing to say?
+} T
+
+
+HEYKCL {...Hey, let's keep it clean here, huh?
+} T
+
+
+NOSAYB {...Said!
+} T
+
+
+UNOTNI {...You're not very nice!
+} T
+
+
+ULOUDE {...You sure are loud enough!
+} T
+
+
+ULOUDV {...That's a pretty loud voice you have!
+} T
+
+
+ENJSLF {...Are you enjoying yourself?
+} T
+
+
+CANTDU {...With all things considered, you can't do that.
+} T
+
+
+STOPCN {You really should learn to control yourself.
+} T
+
+
+AWWWWW {...Awwwwwwwwww!
+} T
+
+
+FRCNTN {...But the force is not tangible!
+} T
+
+
+GIVMEB {...Tell, you what, I will, if you give me a break!
+} T
+
+
+NICTHT {...Nice thought and all, but no can do.
+} T
+
+
+OOOOPS {...Ooops, it slipped out of your hands!
+} T
+
+
+CONSDN {Okay, done!
+} T
+
+
+INTCNC {...Interesting concept!
+} T
+
+
+HNDFUL {You can't hold anymore!
+} T
+
+
+UATTFL {Your attempt fails.
+} T
+
+
+UGOTIT {Your attempt is successful!
+} T
+
+
+WHUSEE {I don't see it here.
+} T
+
+
+LILGRD {You can't hold anymore!
+} T
+
+
+ITYOUR {Taken.
+} T
+
+
+NONORT {Sorry, you can't go to the north.
+} T
+
+
+NOSOUT {Sorry, you can't go to the south.
+} T
+
+
+NOEAST {Sorry, you can't go east.
+} T
+
+
+NOWEST {Sorry, you can't go west.
+} T
+
+
+NOUP {Sorry, you can't go up.
+} T
+
+
+NODOWN {Sorry, you can't go down.
+} T
+
+
+FRCNVI {...But the force is not visible!
+} T
+
+
+SEEDOC {...You'd better see a doctor about that!
+} T
+
+
+FRCPRV {You can't drop any more here!
+} T
+
+
+UDROPT {Dropped.
+} T
+
+
+NICEID {...Nice idea, but you don't have one.
+} T
+
+
+NVRKNU {...Oh, really? I never knew that!
+} T
+
+
+UWINKS {...You wink slyly!
+} T
+
+
+UFLBLU {...Your eyes flash with a blue light for a moment!
+} T
+
+
+WHATUA {...What are you so angry about?
+} T
+
+
+ULKSOA {...You look so angry!
+} T
+
+
+EYEBRN {...Your eyes are burning with anger!
+} T
+
+
+EXITANS {[40m[2J[10C[0;1;35m…ÕÕÕÕÕ∏ …ÕÕÕÕÕÕ∏ …ÕÕÕÕÕÕ∏ …ÕÕÕÕÕ∏ …ÕÕÕ∏ …ÕÕÕÕÕ∏ …ÕÕÕÕÕÕ∏[2;1H[10C∫ ’ÕÕÕæ ∫ ’ÕÕª ≥ ∫ ’ÕÕª ≥ »Õª ’Õæ »ª ’æ ∫ ’Õª ≥ ∫ ’ÕÕª ≥[3;1H[10C∫ ‘Õ∏   ∫ ‘ÕÕº ≥ ∫ ≥  ∫ ≥   ∫ ≥    ∫ ≥  ∫ ≥ »Õæ ∫ ‘ÕÕº ≥[4;1H[10C∫ ’Õæ   ∫ ’Õª ’æ ∫ ≥  ∫ ≥   [s
+[u∫ ≥    ∫ ≥  ∫ ≥ …Õ∏ ∫ ’ÕÕª ≥[5;1H[10C∫ ‘ÕÕÕ∏ ∫ ≥ ∫ ‘∏ ∫ ‘ÕÕº ≥   ∫ ≥   …º ‘∏ ∫ ‘Õº ≥ ∫ ≥  ∫ ≥[6;1H[10C»ÕÕÕÕÕæ »Õæ »ÕÕæ »ÕÕÕÕÕÕæ   »Õæ   »ÕÕÕæ »ÕÕÕÕÕæ »Õæ  »Õæ[7;1H[8;1H[23C[37mH I G H[11CS C O R E S[9;1H[0m[255D} T
+
+
+EXIT2 {
+
+	   :::::: ::::::    ::::  :::::: ::   ::::     :::
+	   ::     ::   ::  ::  ::   ::   ::  ::  ::   :: ::
+	   ::::   ::::::  ::    ::  ::   :: ::       :::::::
+	   ::     ::  ::.  ::  ::   ::   ::  ::  ::  ::   ::
+	   :::::: ::   ::   ::::    ::   ::   ::::  ::     ::
+
+			    HIGH SCORES
+} T
+
+
+ENTR3 {***
+You hear something move nearby!
+} T
+
+
+ENTR6 {***
+A star falls, as yet another person enters the world of Erotica.
+} T
+
+
+ENTR1 {stepped down out of the heavens} T
+
+
+ENTR2 {appeared in a flash of light} T
+
+
+ENTR4 {flown in on a golden chariot} T
+
+
+ENTR5 {appeared in a colorful mist} T
+
+
+ENTR7 {appeared next to you} T
+
+
+EXIT1 {vanished into the shadows} T
+
+
+EXIT3 {disappeared into the shadows} T
+
+
+WLDAP1 {***
+%s is clapping %s hands!
+} T
+
+
+WLDAP2 {...Bravo! Clap! Clap! Clap!
+} T
+
+
+WLDGI1 {***
+%s is giggling madly!
+} T
+
+
+WLDGI2 {...Hee! Hee! Hee!
+} T
+
+
+WLDJM1 {***
+%s is jumping up and down!
+} T
+
+
+WLDJM2 {...What are you so excited about?
+} T
+
+
+WLDLG1 {***
+%s is laughing out loud!
+} T
+
+
+WLDLG2 {...Hahahahaa
+} T
+
+
+WLDSH1 {***
+%s is shrugging %s shoulders!
+} T
+
+
+WLDSH2 {...Shrug.
+} T
+
+
+WLDLI1 {***
+%s is lying down for a short rest!
+} T
+
+
+WLDLI2 {...Comfy now?
+} T
+
+
+WLDWH1 {***
+%s is wheezing heavily!
+} T
+
+
+WLDWH2 {...Wheeeeze!
+} T
+
+
+WLDSI1 {***
+%s is sitting down for a bit!
+} T
+
+
+WLDSI2 {...This looks like a good place
+} T
+
+
+WLDGRV1 {***
+%s is groveling on %s knees!
+} T
+
+
+WLDGRV2 {...Aw, come on now!
+} T
+
+
+WLDSNR1 {***
+%s is sneering disdainfully!
+} T
+
+
+WLDSNR2 {...Oh, you look nasty there!
+} T
+
+
+WLDCAC1 {***
+%s is cackling horribly!
+} T
+
+
+WLDCAC2 {...Cackle! Cackle!
+} T
+
+
+WLDSWE1 {***
+%s is cursing %s fate!
+} T
+
+
+WLDSWE2 {...It's not so bad!
+} T
+
+
+WLDCHO1 {***
+%s is chortling evilly!
+} T
+
+
+WLDCHO2 {...Chortle! Chortle!
+} T
+
+
+WLDBEG1 {***
+%s is begging for mercy!
+} T
+
+
+WLDBEG2 {...Aw, now!
+} T
+
+
+WLDCHR1 {***
+%s is cheering!
+} T
+
+
+WLDCHR2 {...Yaaaaaay!
+} T
+
+
+WLDBLU1 {***
+%s is blushing a deep red!
+} T
+
+
+WLDBLU2 {...Hoooo, are you red!
+} T
+
+
+WLDGAS1 {***
+%s is gasping in amazement!
+} T
+
+
+WLDGAS2 {...Gasp!
+} T
+
+
+WLDCOW1 {***
+%s is cowering fearfully!
+} T
+
+
+WLDCOW2 {...Now, now!
+} T
+
+
+WLDBOW1 {***
+%s is bowing humbly!
+} T
+
+
+WLDBOW2 {...Bow.
+} T
+
+
+WLDSMK1 {***
+%s is smirking out the side of %s mouth!
+} T
+
+
+WLDSMK2 {...What a smirk!
+} T
+
+
+WLDCHV1 {***
+%s is acting chivalrously and with valor!
+} T
+
+
+WLDCHV2 {...True chivalry!
+} T
+
+
+WLDBOO1 {***
+%s is booing and yelling!
+} T
+
+
+WLDBOO2 {...Booooooo!
+} T
+
+
+WLDHIS1 {***
+%s is hissing!
+} T
+
+
+WLDHIS2 {...Hiss!
+} T
+
+
+WLDFRN1 {***
+%s is frowning!
+} T
+
+
+WLDFRN2 {...What's the problem?
+} T
+
+
+WLDSNL1 {***
+%s is snarling viciously!
+} T
+
+
+WLDSNL2 {...Easy, now!
+} T
+
+
+WLDPOT1 {***
+%s is pouting!
+} T
+
+
+WLDPOT2 {...Aw, don't pout!
+} T
+
+
+WLDGRW1 {***
+%s is growling ominously!
+} T
+
+
+WLDGRW2 {...Grrrrr...
+} T
+
+
+WLDGRU1 {***
+%s is making strange noises!
+} T
+
+
+WLDGRU2 {...Grunt!
+} T
+
+
+WLDSML1 {***
+%s is smiling at you!
+} T
+
+
+WLDSML2 {...What a nice smile you have!
+} T
+
+
+WLDGRN1 {***
+%s has a sinister grin on %s face!
+} T
+
+
+WLDGRN2 {...Oh, what an evil, evil grin!
+} T
+
+
+WLDDAN1 {***
+%s is dancing gracefully!
+} T
+
+
+WLDDAN2 {...Such grace!
+} T
+
+
+WLDSIH1 {***
+%s is sighing wistfully!
+} T
+
+
+WLDSIH2 {...Sigh!
+} T
+
+
+WLDSIN1 {***
+%s is singing!
+} T
+
+
+WLDSIN2 {...Such a nice voice you have!
+} T
+
+
+WLDSNZ1 {***
+%s is sneezing violently!
+} T
+
+
+WLDSNZ2 {...Aaah-choooo!
+} T
+
+
+WLDWHM1 {***
+%s is sniveling and whimpering!
+} T
+
+
+WLDWHM2 {...Surely you're no coward??!
+} T
+
+
+WLDSMO1 {***
+%s is searching %s pockets frantically!
+} T
+
+
+WLDSMO2 {...You forgot to bring your cigarettes.
+} T
+
+
+WLDSPI1 {***
+%s is spitting in disgust!
+} T
+
+
+WLDSPI2 {...Patooey!
+} T
+
+
+WLDSNK1 {***
+%s is snickering under %s breath!
+} T
+
+
+WLDSNK2 {...Snicker, snicker!
+} T
+
+
+WLDGON1 {***
+%s is groaning painfully!
+} T
+
+
+WLDGON2 {...Groan!
+} T
+
+
+WLDMON1 {***
+%s is moaning softly!
+} T
+
+
+WLDMON2 {...Moan!
+} T
+
+
+WLDBUR1 {***
+%s is making rude sounds!
+} T
+
+
+WLDBUR2 {...Urrrp!
+} T
+
+
+WLDFAR1 {***
+An odd smell comes from %s!
+} T
+
+
+WLDFAR2 {...Surely not on purpose?!
+} T
+
+
+WLDYAW1 {***
+%s is yawning sleepily!
+} T
+
+
+WLDYAW2 {...Get a little sleep sometime!
+} T
+
+
+WLDNOD1 {***
+%s is nodding in agreement!
+} T
+
+
+WLDNOD2 {...Uh-huh.
+} T
+
+
+WLDGAM1 {***
+%s wants to gamble foolishly.
+} T
+
+
+WLDGAM2 {...That could be risky!
+} T
+
+
+WLDTRD1 {***
+%s is looking at you craftily!
+} T
+
+
+WLDTRD2 {...How?
+} T
+
+
+WLDPRA1 {***
+%s is praying reverently!
+} T
+
+
+WLDPRA2 {You seem earnest enough.
+} T
+
+
+WLDANY1 {***
+%s is performing strange rituals!
+} T
+
+
+WLDANY2 {...Eh?
+} T
+
+
+WLDSIC1 {***
+%s is looking very pale!
+} T
+
+
+WLDSIC2 {You should see a doctor!
+} T
+
+
+WLDSTM1 {***
+%s is stomping the ground!
+} T
+
+
+WLDSTM2 {...Stomp, stomp, stomp!
+} T
+
+
+WLDCRY1 {***
+%s is crying pitifully!
+} T
+
+
+WLDCRY2 {...Boo! Hoo! Hoo!
+} T
+
+
+WLDCOU1 {***
+%s is coughing!
+} T
+
+
+WLDCOU2 {...Cough! Cough!
+} T
+
+
+WLDCHU1 {***
+%s is chuckling under %s breath!
+} T
+
+
+WLDCHU2 {...Heh! Heh! Heh!
+} T
+
+
+WLDWIS1 {***
+%s is whistling some odd tune!
+} T
+
+
+WLDWIS2 {...Real innocent, like!
+} T
+
+
+WLDHUM1 {***
+%s is humming a cute little tune!
+} T
+
+
+WLDHUM2 {...Hmmmmmmmm, hm, hm, hmmm!
+} T
+
+
+WLDBLK1 {***
+%s is blinking %s eyes in disbelief!
+} T
+
+
+WLDBLK2 {...Blink! Blink! Blink!
+} T
+
+
+WLDSNF1 {***
+%s is sniffling with watery eyes!
+} T
+
+
+WLDSNF2 {...Sniffle!
+} T
+
+
+WLDSNO1 {***
+%s is snoring loudly!
+} T
+
+
+WLDSNO2 {...Zzzzzzzzzz!
+} T
+
+
+WLDBRF {Brief descriptions are now on.
+} T
+
+
+WLDLON {Long descriptions are now on.
+} T
+
+
+SAY1 {***
+%s %ss: %s
+} T
+
+
+WHISPER {...Huh?
+} T
+
+
+YELL1 {...Shame on you!
+} T
+
+
+YELL2 {***
+%s is %sing: %s!!
+} T
+
+
+YELL3 {***
+Someone is %sing: %s!!
+} T
+
+
+POSESS {%s possessions consist of } T
+
+
+BRFDES1 {...You're %s.
+} T
+
+
+WINK {...Wink!
+} T
+
+
+EXDOOR {exited through the door} T
+
+
+ENDOOR {entered through the door} T
+
+
+ESOUTH {entered from the south} T
+
+
+ENORTH {entered from the north} T
+
+
+EWEST {entered from the west} T
+
+
+EEAST {entered from the east} T
+
+
+WENTUP {went up} T
+
+
+WENTDWN {went down} T
+
+
+LNORTH {exited to the north} T
+
+
+LSOUTH {exited to the south} T
+
+
+LEAST {exited to the east} T
+
+
+LWEST {exited to the west} T
+
+
+CAMEUP {came up} T
+
+
+CAMEDWN {came down} T
+
+
+DOOROPN {***
+You hear a Click! And the door opens.
+} T
+
+
+CHARNAME {
+You now must enter the name or alias you wish to have your character
+identified by in Erotica. Enter the name of your Erotica character now.
+
+-=*} T
+
+
+CREATED {
+Your character is now created.
+
+<< Hit [ENTER] to Continue>} T
+
+
+GETPREF {
+You must now choose the sexual preference of your character. Remember, the
+preference you choose does not have to reflect your own personal preference.
+In fact, choosing another preference may improve your chances of racking up
+more points in the game.
+
+[........[*=-  Preferences  -=*]........]
+
+	     [1] : Straight
+
+	     [2] : Gay/Lesbian
+
+	     [3] : Bisexual
+
+Please Choose one of the above } T
+
+
+BADIN {
+
+Please enter a valid choice.
+} T
+
+
+CONTINUE {
+<< Hit [ENTER] to play Erotica >} T
+
+
+MONEY {You have %d dollars.
+} T
+
+
+DIED {***
+You have been seduced by %s! Suddenly, your world begins to spin, and you
+black out, only to find yourself elsewhere some time later.
+} T
+
+
+YOUFND {***
+You find %d dollars on %s.
+} T
+
+
+MNDRP {***
+You notice a %s drop to the ground.
+} T
+
+
+MNOHOLD {***
+The monster doesn't appear to have any possessions.
+} T
+
+
+INN {***
+As you relax before the fire, the serving wench brings you your spiced stew
+which you greatfully finish in minutes!
+} T
+
+
+STEAK {***
+As you relax before the fire, the serving wench brings you your thick juicy
+steak which you greatfully finish in minutes!
+} T
+
+
+EAT {***
+%s just had something to eat!
+} T
+
+
+DRINK1 {***
+As you relax in front of the fire you signal the serving wench to bring
+you a mug of ale. She runs over to the bar and grabs a huge mug and fills
+it from the tap and drops it off on your table. You hand her 1 dollar
+for the ale, and quickly drink down the frothy mug.
+} T
+
+
+DRINK2 {***
+%s just drank down a mug of ale.
+} T
+
+
+NOSCUM {***
+You notice the serving wench signal the inn keeper over to your table. He
+glares angily at you and says, "We don't need scum like you around here,
+we got enough problems already nowdays. Everyone expects handouts!".
+***
+With this final statement the inn keeper kicks you out!
+} T
+
+
+SCUM {kicked out of the Inn} T
+
+
+PINCH {***
+As the serving wench passes by the table you nonchalantly reach out and
+pinch her in the behind. She spins on her heel, and looks at you with a
+twisted smile and winks at you!
+} T
+
+
+PINCH2 {***
+%s just pinched the serving wench's behind!
+} T
+
+
+PUB1 {***
+You quickly drink down the %s, how refreshing.
+} T
+
+
+PUB2 {***
+%s just drank a slippery-nipple!
+} T
+
+
+PUB4 {***
+%s just drank a sex-on-the-beach!
+} T
+
+
+PUB6 {***
+%s just drank a slow-screw!
+} T
+
+
+PUB8 {***
+%s just drank a blow-job!
+} T
+
+
+PUB10 {***
+%s just drank an Orgasm!
+} T
+
+
+DONTK {***
+Bartender: Sorry, but I don't know that drink!
+} T
+
+
+BANK1 {***
+I'm sorry but you can't deposit that amount of dollars to your account.
+} T
+
+
+BANK2 {***
+The banker takes your currency and carefully counts through it and says,
+"You have no worries, I'll take good care of this."
+} T
+
+
+BANK4 {***
+The banker punches your name into a computer and says, "Ahhhh, ok. You have
+%d dollars in your account."
+} T
+
+
+BANK5 {***
+Sorry, but you can't withdraw that amount.
+} T
+
+
+BANK6 {***
+The banker pulls the money out of his cash drawer and hands you your
+withdrawal. He hands the currency over to you and says, "Should be all
+there!"
+} T
+
+
+GOLD1 {***
+You are carrying %d dollars.
+} T
+
+
+GOLD2 {***
+%s is looking through %s money.
+} T
+
+
+STOCKHDR {
+   [0;1;34mItem Name            Stock     Dollars
+----------------        -----     -------[0m
+} T
+
+
+STOCKMSG {[0;36m%-19s    %6d   %9d[0m
+} T
+
+
+NOGOLD {***
+Sorry, you do not have enough money.
+} T
+
+
+NOSTOCK {***
+Sorry, but that item is not currently in stock.
+} T
+
+
+SOLD {***
+The shop keeper takes your money and hands you the item. "You can be assured
+its of good quality!"
+} T
+
+
+NOPRICE {***
+Sorry, I can not price that item.
+} T
+
+
+SELL {***
+The shop keeper carefully examines the item and hands you over the currency
+for the item.
+} T
+
+
+YOUDONT {***
+You don't have that item to sell!
+} T
+
+
+NOTHING {***
+You didn't find anthing on them.
+} T
+
+
+FOUNDGLD {***
+You found %d dollars on %s!
+} T
+
+
+PHYSCL {***
+%s is checking %s physical condition.
+} T
+
+
+RUB1 {...Rub what??
+} T
+
+
+RUB2 {***
+%s is trying to rub something!
+} T
+
+
+RUB3 {...But!  But!  You aren't holding %s!
+} T
+
+
+RUB4 {***
+%s is rubbing the air for some reason!
+} T
+
+
+THNK1 {...%s what??
+} T
+
+
+THNK2 {***
+%s is trying to %s something!
+} T
+
+
+THNK3 {...You're so thoughtful!
+} T
+
+
+THNK4 {***
+%s is thinking things over.
+} T
+
+
+THNK5 {...The %s telepathizes good vibes back at you!
+} T
+
+
+THNK6 {***
+%s is experiencing good vibes for a change.
+} T
+
+
+TAKEN {Taken.
+} T
+
+
+COJ1 {...No such item.
+} T
+
+
+COJ2 {...Hands full.
+} T
+
+
+COJ3 {...Riiiiiight.
+} T
+
+
+GODSPK1 {...Ok, the gods have spoken!
+} T
+
+
+GODSPK2 {***
+A voice from the heavens declares: %s
+} T
+
+
+QUAKE {...Ok, the earth is shattering!
+} T
+
+
+BCAST1 {...Ok, message Broadcast!
+} T
+
+
+BCAST2 {***
+From Sysop (Game Broadcast): %s
+} T
+
+
+FAIRY1 {...Ok, the fairies are doing their stuff!
+} T
+
+
+FAIRY2 {...Sorry, '%s' is not online right now!
+} T
+
+
+VISION1 {...Ok, visions and dreams are aloft!
+} T
+
+
+VISION2 {...Sorry, '%s' is not online right now!
+} T
+
+
+YOUR {...You're %s.
+} T
+
+
+ITMLST1 {There is nothing %s.
+} T
+
+
+ITMLST2 {There is %s %s.
+} T
+
+
+ITMLST3 {There is %s and } T
+
+
+ITMLST4 {%s %s.
+} T
+
+
+ITMLST5 {There is } T
+
+
+ITMLST6 {%s, } T
+
+
+ITMLST7 {and %s %s.
+} T
+
+
+INVPRT1 {...You are holding } T
+
+
+INVPRT2 {***
+%s is looking through %s things.
+} T
+
+
+INVUTL1 {nothing.
+} T
+
+
+INVUTL2 {%s.
+} T
+
+
+INVUTL3 {%s and } T
+
+
+INVUTL4 {%s.
+} T
+
+
+INVUTL5 {%s, } T
+
+
+INVUTL6 {and %s.
+} T
+
+
+MON2 {There is %s and %s here.
+} T
+
+
+SEEP1 {%s is here.
+} T
+
+
+SEEP2 {%s and %s are here.
+} T
+
+
+SEEP3 {} T
+
+
+SEEP4 {%s, } T
+
+
+SEEP5 {and %s are here.
+} T
+
+
+SEEP6 {%s, %s, } T
+
+
+BORNAG {been dragged in by a cat} T
+
+
+PDIED {been seduced} T
+
+
+MDOWN {%s looks %s.
+} T
+
+
+PLAYIT {
+[0;1;37mEnter the world of the [0;1;33mErotica [0;1;37mand unleash the secrets of a horny land![0m
+} T
+
+
+HITENTR {<< Hit [ENTER] to Continue >} T
+
+
+STATS {
+You are %s, a %s %s.} T
+
+
+DEFPTS {
+You have %d out of %d defense points.
+} T
+
+
+ATTMPT {
+Attempting a sexual encounter with %s.
+
+Use which item:
+
+} T Attempting encounter
+
+
+ERTITMS { [%d]: %s
+} T Item listing format
+
+
+GETREAL {***
+[0;1;33mGet real! You don't even have that.[0m
+
+} T Comment when user doesn't have item
+
+
+TRYEH {***
+[0;1;33mThat is not a valid command here![0m
+
+} T Try again prompt
+
+
+NOUSE {***
+You can't use that item now!
+
+} T
+
+
+QUITLN { [Q]: Quit Encounter
+} T
+
+
+GOTYA {***
+You use your %s on %s.
+} T
+
+
+DIDEM {***
+%s just used %s %s on %s.
+} T
+
+
+SUBMIT {***
+%s just submitted to %s.
+} T
+
+
+SBMTU {***
+[0;1;33m%s has just submitted to you.[0m
+} T
+
+
+RBTATT {***
+%s just used %s on you.
+} T
+
+
+ATTCKU {***
+%s just used %s %s on you.
+} T
+
+
+NTHERE {***
+I don't see %s here anymore!
+} T
+
+
+CRAZY {***
+%s seems to be losing control.
+} T
+
+
+NDITM {***
+[0;1;37mSorry, but you're going to need some items here.[0m
+} T
+
+
+NOSEE {***
+Sorry, but I don't see that person here.
+} T
+
+
+RECOVER {***
+This person is recovering from a previous encounter.
+} T
+
+
+DEFENSE {***
+%s has a defense for %s!
+
+} T
+
+
+NCOMPT {***
+[0;1;37mSorry, but you are not sexually compatible with %s.[0m
+} T
+
+
+HILINE {
+[0;1;37mRate      Name                                Score
+----      ------------------------------      -----
+[0m} T
+
+
+SCRLN {[0;36m%-2d        %-30s      %-5d[0m
+} T
+
+
+NOWHAT {
+
+Okay, now the funs begins.....
+
+Would you like to:
+
+     [1]: Have sex with %s
+     [2]: Perform oral sex on %s
+     [3]: Have %s perform oral sex for you
+
+} T
+
+
+SORRY {
+
+[0;1;37mSorry, but you do not have access to this game.[0m
+
+} T No access message
+
+
+PPTS {[0;1;36m***
+You're current score is %s.[0m
+} T Score message
+
+
+OKCHD {[0;1;36m
+Okay, you are now a %s %s.[0m
+} T Changed sexual preference message
+
+
+SYSLST1 {
+Users System ID                    Users Erotica Handle
+---------------------------------------------------------------
+} T syslist header
+
+
+SYSLST2 {%-35s%-20s
+} T syslist line
+
+
+CHNGPRF {
+Please enter your new sexual preference now. Remember that you will be
+penalized 25 points each time you change your preference.
+
+
+[........[*=-  Preferences  -=*]........]
+
+	     [1] : Straight
+
+	     [2] : Gay/Lesbian
+
+	     [3] : Bisexual
+
+Please Choose one of the above } T
+
+
+HELLO {[0;1;32m
+Now entering the dirty message forum. A serice of the City of Erotica!
+
+When you are done typing hit <Ctrl-G> to save your message.
+
+} T Entering mail message
+
+
+ARSWHO {***
+[0;1;37mUmm.. It would help if you had [0;1;33msomeone[0;1;37m in mind for this![0m
+} T Missing parameter on arouse command
+
+
+MAP {[40m[2J[25C[0;35m⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ[1mƒƒ[0mƒƒ[1mƒø
+[10C[0;36mWet 'n[9C[35m≥ [1;32mCity of Erotica Map [0m≥
+[36mErotica[5CWild[9C[35m¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ[1mŸ[15C[0;36mPorn-O-Rama
+    [1;37m≥[7C≥[55C≥
+[0;36mErotica[1;37mƒƒ[0;36mBourbon[1;37mƒƒƒƒƒƒƒƒ[0;36mBourbon[1;37mƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ[0;36mBourbon[1;37mƒƒƒƒƒƒƒƒ[0;36mBourbon
+    [1;37m≥[22C≥[25C≥[14C≥
+    ≥[13C[0;36mBed[1;37mƒƒ[0;36mMadame's   Bar[1;37mƒƒ[0;36mDr. Techno[1;37mƒƒ[0;36mCenter[1;37mƒƒ[0;36mAlley    [1;37m≥
+[0;36mErotica[1;37mƒƒ[0;36mCasino   Room   Romp &[12C[1;37m≥[9C≥[7C≥[6C≥
+    ≥[7C≥[14C[0;36mPlay[10CLounge[6C[1;37m≥[5C[0;36mGarage   [1;37m≥
+    ≥[6C[0;36mBar[39C[1;37m≥[14C≥
+    ≥[37C[0;36mLibrary[1;37mƒƒ[0;36mCenter   Melt  Wisc.
+Erotica[1;37mƒƒ[0;36mBank[48CDown[1;37mƒƒ[0;36mAve.[1;37mƒƒ[0;36mHoops
+[38CRenees[7CAdam &   Motel   [1;37m≥    [0;36mBar
+[38CLingerie[7CEves[11C[1;37m≥
+[12CN[14C[0;36mRuby[10C[1;37m≥[12C≥[13C≥
+[12C[32m⁄[14C[0;36mOffice[1;37mƒƒƒƒƒ[0;36mSunset[1;37mƒƒƒƒƒƒƒƒ[0;36mSunset[1;37mƒƒƒƒ[0;36mSunset[1;37mŸ
+[9CW [32mƒ≈ƒ [37mE[11C[0;36mComplex[5CStrip[9CStrip[5CStrip
+[12C[1;32mŸ[28C[37m≥[12C≥
+[12CS[25C[0;36mLonely[7CWax 'em
+[38CHeart's[6CDown
+[39CCafe
+[1;37m<< Hit [[36mENTER[37m] to Continue >} T Erotica Map Screen
+
+
+YANAIL {***
+You just nailed %s with your handy-dandy dart gun, when he tried to steal
+your toys!
+} T Theft output
+
+
+GOTNAIL {***
+%s just nailed you with %s dart gun! Ooouuuuuuch....
+
+You feel yourself getting very, very dizzy.
+} T Theft output
+
+
+SMACK {***
+%s just nailed %s in the forehead with %s dart-gun!
+} T Theft output
+
+
+ZAPP {just got dragged away by a cat} T Zap message
+
+
+NOMAST {***
+Hey! There is no playing with yourself in this game. Find someone else to
+play with!
+} T Cant arouse self message
+
+
+
+MAP2 {[0m[2J                         [35m⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ[1mƒƒ[0mƒƒ[1mƒø
+                         [0;35m≥ [1;32mCity of West Erotica [0m≥
+                         [35m¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ[1mŸ
+
+                        [0;36mApplegate's   Erotica
+                        Massage          [37m≥
+                        [36mParlor        Erotica[37mƒƒƒƒ[36mBourbon[37mƒƒƒƒ[1m([36mCentral Erotica[37m)
+                           [0m≥             ≥
+[36mEden St.[37mƒƒƒƒ[36mEden St.[37mƒƒƒƒ[36mEden St.[37mƒƒƒƒƒƒ[36mErotica[37mƒƒƒƒ[36mCasino
+               [37m≥           ≥             ≥         ≥
+            [36mEden's     Emergency         [37m≥        [36mBar
+            Place      Medical           [37m≥
+                       [36mClinic            [37m¿ƒƒƒƒƒƒƒ[36mBank
+
+
+            [1;37mN
+            [32m⁄
+         [37mW [32mƒ≈ƒ [37mE
+            [32mŸ
+            [37mS
+
+
+<< Hit [[36mENTER[37m] to Continue >} T Erotica Map Screen
+
+
+MAP3 {[0m[2J                         [35m⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ[1mƒƒ[0mƒƒ[1mƒø
+                         [0;35m≥ [1;32mCity of Erotica Map [0m≥
+                         [35m¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ[1mŸ
+                                                        [0;36mSubway
+                                                       Entrance
+                                                          [37m≥
+                                   [36mSubway              Subway
+                                  Entrance             Passage
+                                     [37m≥                    ≥
+                        [36mWomen's    Subway    Subway[37mƒƒƒƒ[36mSubway
+                       Bathroom      [37m≥         ≥       [36mPassage
+                           [37m≥         ≥         ≥          ≥
+               [36mSubway[37mƒƒƒƒ[36mSubway[37mƒƒƒƒ[36mSubway[37mƒƒƒƒ[36mSubway   Cafeteria
+              Entrance     [37m≥         ≥
+	    [1mN            [0;36mMen's       [37m≥
+	    [1;32m⁄          [0;36mBathroom    Subway[37mƒƒƒƒ[36mSubway[37mƒƒƒƒ[36mSubway
+	 [1;37mW [32mƒ≈ƒ [37mE                     [0m≥       [36mPassage   Passage
+	    [1;32mŸ                    [0;36mNewspaper               [37m≥
+	    [1mS                      [0;36mStand               Subway[37mƒƒƒƒ[36mSubway
+						       Passage  Entrance
+
+[1;37m<< Hit [[36mENTER[37m] to Continue >} T Erotica Map Screen
+
+
+DISEASE {[0;1m***
+Due to your careless encounter, you have contracted a sexually transmitted
+disease.[0m
+} T
+
+
+DOCSIGN {[0;1m***
+ [0;36m--------------------------------
+|    [1mEmergency Medical Clinic    [0;36m|
+|--------------------------------|
+|                                |
+| [1mSpecial of the day :           [0;36m|
+|                                |
+| [1;37mSexually Transmitted Diseases  [0;36m|
+| [1;37mWe'll cure any disease for the [0;36m|
+| [1;37mlow, low price of JUST $10.00  [0;36m|
+|                                |
+| [1;37mJust type "cure me"            [0;36m|
+ --------------------------------[0m
+} T
+
+
+DOC2 {[0;1m***
+[36mThe doctor says, "[37mHey listen, we've already got a special going on, if you
+don't have $10.00 I can't do anything for you. I would have thought you
+would have learned from all those condom commercials.[36m"[0m
+} T
+
+
+DOC3 {[0;1m***
+[36mThe doctor gives you a pill, and sends you on your way. Ahhh.. the marvels
+of modern medicine. But maybe you should practice safe sex next time![0m
+} T
+
+
+NODISE {[0m
+[1mSuddenly the old joke about "crabs on your organe" pops into your head, and
+your very glad you used a condom![0m
+} T
+
+
+DEFPTS2 {[0m
+You have %d out of %d defense points [1m*[36mcontracted disease[37m*[0m.
+} T
+
+DIFFNAME {
+That nick name is already in use by another player, please choose another.
+} T

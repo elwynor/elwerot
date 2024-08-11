@@ -1,0 +1,6 @@
+; Filename: ELWEROT_EXP.DEF
+LIBRARY ELWEROT.DLL
+; *** Visual Studio 2019 EXPORT ALIASES ONLY ***
+; Module Description Here - Copyright (c) Skynet, Inc.
+EXPORTS
+    init__elwerot=_init__elwerot	@1
